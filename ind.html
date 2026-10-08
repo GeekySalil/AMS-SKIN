@@ -29,7 +29,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -136,30 +136,6 @@
       width: 100%;
       max-width: 100%;
       overflow-x: hidden;
-    }
-
-    /* Performance: allow the browser to skip rendering far-off sections until needed. */
-    section {
-      content-visibility: auto;
-      contain-intrinsic-size: 800px;
-    }
-
-    /* Performance: keep animated/interactive elements on their own compositing layer. */
-    .hero-slide,
-    #galleryTrack,
-    #twc-before-img {
-      will-change: transform, opacity;
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      .reveal,
-      .hero-slide,
-      .service-gradient-card,
-      .doctor-gradient-card,
-      .equip-gradient-card,
-      .why-gradient-card {
-        transition: none !important;
-      }
     }
 
     /* 100vh Desktop Viewport Lock - Navbar (68px) + Hero Area + Stats Strip (54px) = exactly 100vh on Desktop */
@@ -330,7 +306,7 @@
     </div>
 
     <!-- Mobile Dropdown Menu -->
-    <div id="mobile-menu" class="hidden xl:hidden fixed top-[68px] left-0 w-full bg-white border-b border-slate-200 px-6 py-4 shadow-2xl space-y-3 z-[89]">
+    <div id="mobile-menu" class="hidden xl:hidden fixed top-[68px] left-0 w-full  border-b border-slate-200 px-6 py-4 shadow-2xl space-y-3 z-[89]">
       <a href="#home" class="mobile-nav-link block font-semibold text-brandRed">Home</a>
       <a href="#about" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlue">About</a>
       <a href="#doctor" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlue">Director</a>
@@ -450,7 +426,7 @@
           
           <!-- Slide 1 -->
           <div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-100 z-10">
-            <img src="images/4.png" alt="Dr Ajay Mohan Dermatologist Clinic Operatory Mau" class="w-full h-full object-cover object-center" width="1200" height="900" fetchpriority="high" decoding="async" />
+            <img src="images/4.png" alt="Dr Ajay Mohan Dermatologist Clinic Operatory Mau" class="w-full h-full object-cover object-center" />
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-900/20 to-transparent"></div>
             <!-- <div class="absolute bottom-5 left-5 sm:bottom-7 sm:left-10 lg:bottom-8 lg:left-12 z-20 text-white max-w-md">
               <span class="bg-brandBlue/90 backdrop-blur-sm px-3 py-1 rounded text-[11px] font-black uppercase tracking-wider">Clinical Excellence</span>
@@ -462,7 +438,7 @@
           
           <!-- Slide 3 -->
           <div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-            <img src="images/14.png" alt="Hydrafacial Treatment and Skin Glow Mau" class="w-full h-full object-cover object-center"  loading="lazy" decoding="async" />
+            <img src="images/14.png" alt="Hydrafacial Treatment and Skin Glow Mau" class="w-full h-full object-cover object-center" />
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-900/20 to-transparent"></div>
             <!-- <div class="absolute bottom-5 left-5 sm:bottom-7 sm:left-10 lg:bottom-8 lg:left-12 z-20 text-white max-w-md">
               <span class="bg-brandTeal/90 backdrop-blur-sm px-3 py-1 rounded text-[11px] font-black uppercase tracking-wider">Aesthetic Dermatology</span>
@@ -480,7 +456,7 @@
           
 
           <div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-            <img src="images/11.png" alt="Trichology and Hair Transplant Surgeon Mau" class="w-full h-full object-cover object-center"  loading="lazy" decoding="async" />
+            <img src="images/11.png" alt="Trichology and Hair Transplant Surgeon Mau" class="w-full h-full object-cover object-center" />
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-900/20 to-transparent"></div>
             <!-- <div class="absolute bottom-5 left-5 sm:bottom-7 sm:left-10 lg:bottom-8 lg:left-12 z-20 text-white max-w-md">
               <span class="bg-brandBlue/90 backdrop-blur-sm px-3 py-1 rounded text-[11px] font-black uppercase tracking-wider">Trichology Center</span>
@@ -490,7 +466,7 @@
           </div>
           <!-- Slide 2 -->
           <div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-            <img src="images/8.png" alt="Laser Hair Removal and Tattoo Removal Mau" class="w-full h-full object-cover object-center"  loading="lazy" decoding="async" />
+            <img src="images/8.png" alt="Laser Hair Removal and Tattoo Removal Mau" class="w-full h-full object-cover object-center" />
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-900/20 to-transparent"></div>
             <!-- <div class="absolute bottom-5 left-5 sm:bottom-7 sm:left-10 lg:bottom-8 lg:left-12 z-20 text-white max-w-md">
               <span class="bg-brandRed/90 backdrop-blur-sm px-3 py-1 rounded text-[11px] font-black uppercase tracking-wider">Laser & Cosmetology</span>
@@ -499,7 +475,7 @@
             </div> -->
           </div>
           <div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-            <img src="images/16.png" alt="Trichology and Hair Transplant Surgeon Mau" class="w-full h-full object-cover object-center"  loading="lazy" decoding="async" />
+            <img src="images/16.png" alt="Trichology and Hair Transplant Surgeon Mau" class="w-full h-full object-cover object-center" />
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-900/20 to-transparent"></div>
             <!-- <div class="absolute bottom-5 left-5 sm:bottom-7 sm:left-10 lg:bottom-8 lg:left-12 z-20 text-white max-w-md">
               <span class="bg-brandBlue/90 backdrop-blur-sm px-3 py-1 rounded text-[11px] font-black uppercase tracking-wider">Trichology Center</span>
@@ -508,7 +484,7 @@
             </div> -->
           </div>
           <div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-            <img src="images/18.png" alt="Hydrafacial Treatment and Skin Glow Mau" class="w-full h-full object-cover object-center"  loading="lazy" decoding="async" />
+            <img src="images/18.png" alt="Hydrafacial Treatment and Skin Glow Mau" class="w-full h-full object-cover object-center" />
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-900/20 to-transparent"></div>
             <!-- <div class="absolute bottom-5 left-5 sm:bottom-7 sm:left-10 lg:bottom-8 lg:left-12 z-20 text-white max-w-md">
               <span class="bg-brandTeal/90 backdrop-blur-sm px-3 py-1 rounded text-[11px] font-black uppercase tracking-wider">Aesthetic Dermatology</span>
@@ -651,7 +627,7 @@
           <div class="relative mx-auto max-w-md">
             
             <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100">
-              <img src="images/20.png"AMS Skin & Allergy Center Interior Suite Mau" class="w-full h-auto object-cover"  loading="lazy" decoding="async" />
+              <img src="images/20.png"AMS Skin & Allergy Center Interior Suite Mau" class="w-full h-auto object-cover" />
             </div>
 
             <!-- Floating Rating Card -->
@@ -978,7 +954,7 @@
               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=80';"
               alt="Hydrafacial & Laser Cosmetology Procedure" 
               class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500" 
-             loading="lazy" decoding="async" />
+            />
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
             <div class="absolute bottom-6 left-6 right-6 text-center">
               <span class="bg-brandRed text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-wider">US-FDA Standard Care</span>
@@ -1054,13 +1030,13 @@
             <div class="relative w-full aspect-[4/3] sm:aspect-[16/10] overflow-hidden rounded-xl select-none" id="twc-slider-container">
               
               <!-- After Image -->
-              <img src="images/t2.png" alt="After Skin & Acne Scar Treatment" class="absolute inset-0 w-full h-full object-cover pointer-events-none"  loading="lazy" decoding="async" />
+              <img src="images/t2.png" alt="After Skin & Acne Scar Treatment" class="absolute inset-0 w-full h-full object-cover pointer-events-none" />
               <span class="absolute top-4 right-4 z-10 bg-emerald-600/90 backdrop-blur-sm text-white text-xs font-black px-3 py-1.5 rounded-md uppercase tracking-wider select-none">
                 After Therapy
               </span>
 
               <!-- Before Image -->
-              <img id="twc-before-img" src="images/t1.png" alt="Before Skin Treatment" class="absolute inset-0 w-full h-full object-cover pointer-events-none"   loading="lazy" decoding="async" />
+              <img id="twc-before-img" src="images/t1.png" alt="Before Skin Treatment" class="absolute inset-0 w-full h-full object-cover pointer-events-none"  />
               <span class="absolute top-4 left-4 z-10 bg-amber-600/90 backdrop-blur-sm text-white text-xs font-black px-3 py-1.5 rounded-md uppercase tracking-wider select-none">
                 Before Therapy
               </span>
@@ -1426,7 +1402,7 @@
         <!-- Video Card 1 -->
         <div class="group relative rounded-3xl overflow-hidden shadow-2xl border border-white/10 bg-slate-950 flex flex-col hover:border-blue-500 transition-all duration-300">
           <div class="relative w-full h-[340px] sm:h-[400px] overflow-hidden bg-slate-900">
-            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80" alt="Clinical Video Reel" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-75"  loading="lazy" decoding="async" />
+            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80" alt="Clinical Video Reel" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-75" />
             
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
 
@@ -1468,7 +1444,7 @@
         <!-- Video Card 2 -->
         <div class="group relative rounded-3xl overflow-hidden shadow-2xl border border-white/10 bg-slate-950 flex flex-col hover:border-blue-500 transition-all duration-300">
           <div class="relative w-full h-[340px] sm:h-[400px] overflow-hidden bg-slate-900">
-            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80" alt="Clinical Video Session" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-75"  loading="lazy" decoding="async" />
+            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80" alt="Clinical Video Session" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-75" />
             
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
 
@@ -2331,35 +2307,22 @@
       const progressBar = document.getElementById('scroll-progress');
       const backToTopBtn = document.getElementById('backToTop');
 
-      let scrollTicking = false;
-
-      function updateScrollUI() {
-        const winScroll = window.scrollY || document.documentElement.scrollTop;
-        const height = document.documentElement.scrollHeight - window.innerHeight;
-        const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
-
+      window.addEventListener('scroll', () => {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
         if (progressBar) progressBar.style.width = scrolled + "%";
 
         if (backToTopBtn) {
-          const showBackToTop = winScroll > 400;
-          backToTopBtn.classList.toggle('opacity-0', !showBackToTop);
-          backToTopBtn.classList.toggle('pointer-events-none', !showBackToTop);
-          backToTopBtn.classList.toggle('translate-y-4', !showBackToTop);
-          backToTopBtn.classList.toggle('opacity-100', showBackToTop);
-          backToTopBtn.classList.toggle('translate-y-0', showBackToTop);
-        }
-
-        scrollTicking = false;
-      }
-
-      window.addEventListener('scroll', () => {
-        if (!scrollTicking) {
-          scrollTicking = true;
-          requestAnimationFrame(updateScrollUI);
+          if (winScroll > 400) {
+            backToTopBtn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+            backToTopBtn.classList.add('opacity-100', 'translate-y-0');
+          } else {
+            backToTopBtn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+            backToTopBtn.classList.remove('opacity-100', 'translate-y-0');
+          }
         }
       }, { passive: true });
-
-      updateScrollUI();
 
       if (backToTopBtn) {
         backToTopBtn.addEventListener('click', () => {
@@ -2397,11 +2360,8 @@
       const heroSlides = document.querySelectorAll('.hero-slide');
       let currentHeroSlide = 0;
 
-      let heroInterval = null;
-
-      function startHeroSlider() {
-        if (heroSlides.length < 2 || heroInterval) return;
-        heroInterval = setInterval(() => {
+      if (heroSlides.length > 0) {
+        setInterval(() => {
           heroSlides[currentHeroSlide].classList.remove('opacity-100', 'z-10');
           heroSlides[currentHeroSlide].classList.add('opacity-0', 'z-0');
 
@@ -2411,15 +2371,6 @@
           heroSlides[currentHeroSlide].classList.add('opacity-100', 'z-10');
         }, 2800);
       }
-
-      function stopHeroSlider() {
-        if (heroInterval) {
-          clearInterval(heroInterval);
-          heroInterval = null;
-        }
-      }
-
-      startHeroSlider();
 
       // Gallery Slider (NO BOTTOM DOTS AS REQUESTED)
       const galleryTrack = document.getElementById('galleryTrack');
@@ -2443,19 +2394,12 @@
           updateGallery();
         }
         function startGalleryAuto() {
-          if (galleryInterval || totalGalleryImages < 2) return;
+          if (galleryInterval) clearInterval(galleryInterval);
           galleryInterval = setInterval(nextGallery, 3000);
         }
 
-        function stopGalleryAuto() {
-          if (galleryInterval) {
-            clearInterval(galleryInterval);
-            galleryInterval = null;
-          }
-        }
-
-        if (nextGalleryBtn) nextGalleryBtn.addEventListener('click', () => { nextGallery(); stopGalleryAuto(); startGalleryAuto(); });
-        if (prevGalleryBtn) prevGalleryBtn.addEventListener('click', () => { prevGallery(); stopGalleryAuto(); startGalleryAuto(); });
+        if (nextGalleryBtn) nextGalleryBtn.addEventListener('click', () => { nextGallery(); startGalleryAuto(); });
+        if (prevGalleryBtn) prevGalleryBtn.addEventListener('click', () => { prevGallery(); startGalleryAuto(); });
 
         startGalleryAuto();
       }
@@ -2577,35 +2521,7 @@
       }
 
       renderTestimonial();
-
-      let testimonialInterval = null;
-
-      function startTestimonials() {
-        if (testimonialInterval || reviews.length < 2) return;
-        testimonialInterval = setInterval(nextTestimonial, 3800);
-      }
-
-      function stopTestimonials() {
-        if (testimonialInterval) {
-          clearInterval(testimonialInterval);
-          testimonialInterval = null;
-        }
-      }
-
-      startTestimonials();
-
-      // Avoid running carousels while the page is hidden/backgrounded.
-      document.addEventListener('visibilitychange', () => {
-        if (document.hidden) {
-          stopHeroSlider();
-          stopGalleryAuto();
-          stopTestimonials();
-        } else {
-          startHeroSlider();
-          startGalleryAuto();
-          startTestimonials();
-        }
-      });
+      setInterval(nextTestimonial, 3800);
 
       // FAQ Accordion Logic
       const faqBtns = document.querySelectorAll('.faq-btn');

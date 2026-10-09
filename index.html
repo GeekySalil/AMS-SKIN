@@ -10,7 +10,7 @@
   <meta name="keywords" content="AMS Skin & Allergy Center, Dr Ajay Mohan, Best Dermatologist in Mau, Skin Specialist Mau, Laser Surgeon Mau, Hydrafacial Mau, Allergy Treatment Mau, Acne Scar Removal, Hair Transplant Mau, Vitiligo Treatment, Fungal Infection Specialist Purvanchal, Dr Ajay Mohan Mau" />
   <meta name="author" content="Dr. Ajay Mohan | AMS Skin & Allergy Center®" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.amsskinclinic.com/" />
+  <link rel="canonical" href="https://www.amsskincenter.in/" />
 
   <!-- Geo Meta Tags for Mau & Purvanchal SEO -->
   <meta name="geo.region" content="IN-UP" />
@@ -18,17 +18,22 @@
   <meta name="geo.position" content="25.926781;83.569747" />
   <meta name="ICBM" content="25.926781, 83.569747" />
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/round-logo.png">
+
   <!-- Open Graph / Social Sharing -->
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="website"/>
   <meta property="og:site_name" content="AMS Skin & Allergy Center®" />
   <meta property="og:title" content="AMS Skin & Allergy Center® | Dr. Ajay Mohan (Gold Medalist Dermatologist)" />
   <meta property="og:description" content="PGI's renowned Skin, Hair, Nail & Allergy Specialist in Mau. Advanced US-FDA standard Lasers, Hydrafacial, and Trichology." />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:image" content="images/20.webp" />
   <meta property="og:locale" content="en_IN" />
 
-  <!-- Google Fonts -->
+  <!-- Resource Preconnects for Speed -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://www.facebook.com">
+  <link rel="dns-prefetch" href="https://www.facebook.com">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS CDN -->
@@ -56,7 +61,7 @@
     }
   </script>
 
-  <!-- Font Awesome 6 CDN (Free Tier Verified) -->
+  <!-- Font Awesome 6 CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
   <!-- Schema.org JSON-LD for Local Medical Business -->
@@ -66,7 +71,7 @@
     "@type": ["Dermatology", "MedicalClinic"],
     "name": "AMS Skin & Allergy Center®",
     "alternateName": "Dr. Ajay Mohan Skin & Laser Clinic Mau",
-    "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80",
+    "image": "images/round-logo.png",
     "telephone": "+919412441889",
     "priceRange": "₹₹",
     "address": {
@@ -138,13 +143,11 @@
       overflow-x: hidden;
     }
 
-    /* Performance: allow the browser to skip rendering far-off sections until needed. */
     section {
       content-visibility: auto;
       contain-intrinsic-size: 800px;
     }
 
-    /* Performance: keep animated/interactive elements on their own compositing layer. */
     .hero-slide,
     #galleryTrack,
     #twc-before-img {
@@ -162,18 +165,18 @@
       }
     }
 
-    /* 100vh Desktop Viewport Lock - Navbar (68px) + Hero Area + Stats Strip (54px) = exactly 100vh on Desktop */
+    /* 100vh Desktop Viewport Lock */
     @media (min-width: 1024px) {
       .hero-viewport-wrap {
         height: 100vh;
         max-height: 100vh;
-        padding-top: 68px; /* Dedicated clearance for 68px fixed header */
+        padding-top: 68px;
       }
       #home {
         grid-template-columns: 48% 52%;
         gap: 0;
         align-items: stretch;
-        height: calc(100vh - 68px - 54px); /* Fills every pixel of remaining screen height */
+        height: calc(100vh - 68px - 54px);
       }
       #home > div:first-child,
       #home > div:last-child {
@@ -214,7 +217,6 @@
       overflow-wrap: anywhere;
     }
 
-    /* Subtle Card Background Gradients */
     .service-gradient-card,
     .doctor-gradient-card,
     .why-gradient-card,
@@ -275,48 +277,49 @@
   <!-- ================= TOP READING PROGRESS BAR ================= -->
   <div id="scroll-progress" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-brandBlue via-brandTeal to-brandRed z-[100] transition-all duration-150 w-0"></div>
 
-  <!-- ================= 1. STICKY / FIXED NAVBAR (Guaranteed 68px Height) ================= -->
+  <!-- ================= 1. STICKY NAVBAR ================= -->
   <header id="main-nav" class="fixed top-0 left-0 w-full z-[90] transition-all duration-300 glass-nav border-b border-slate-200/80 shadow-sm h-[68px] flex items-center">
     <div class="w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
       
       <!-- Clinic Brand Logo -->
       <a href="#home" class="flex items-center gap-2.5 sm:gap-3 group">
-        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-br from-brandBlue to-brandRed flex items-center justify-center group-hover:scale-105 transition-transform duration-300 text-white shadow-md shrink-0">
-          <i class="fa-solid fa-hand-holding-medical text-base sm:text-lg"></i>
+        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full overflow-hidden flex items-center justify-center group-hover:scale-105 transition-transform duration-300 shadow-md shrink-0 bg-white">
+          <img 
+            src="images/round-logo.png" 
+            alt="AMS Skin & Allergy Center Logo"
+            class="w-full h-full object-cover"
+            width="44"
+            height="44"
+            decoding="async"
+          >
         </div>
         <div>
           <div class="text-base sm:text-lg lg:text-xl font-black tracking-tight leading-none text-slate-900">
             AMS SKIN & <span class="text-brandRed">ALLERGY CENTER®</span>
           </div>
-          <p class="text-[8px] sm:text-[9px] tracking-wider text-slate-500 font-extrabold uppercase mt-0.5">
-            Dr. Ajay Mohan • M.D. (Skin & V.D.) Gold Medalist
+          <p class="text-[8px] sm:text-[11px] tracking-wider text-slate-500 font-extrabold uppercase mt-0.5">
+            Dr. Ajay Mohan • M.D. (Skin & V.D.)
           </p>
         </div>
       </a>
 
       <!-- Desktop Navigation Links -->
-      <nav class="hidden xl:flex items-center gap-5 2xl:gap-6 font-bold text-sm 2xl:text-sm text-slate-700">
-        <a href="#home" class="text-brandRed relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-brandRed transition-all">Home</a>
-        <a href="#about" class="hover:text-brandBlue transition-colors py-1">About</a>
-        <a href="#doctor" class="hover:text-brandBlue transition-colors py-1">Director</a>
-        <a href="#services" class="hover:text-brandBlue transition-colors py-1">Treatments</a>
+      <nav class="hidden xl:flex items-center gap-5 2xl:gap-6 font-extrabold text-sm 2xl:text-sm text-slate-700">
+        <a href="#home" class="text-brandRed relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-brandRed transition-all">HOME</a>
+        <a href="#about" class="hover:text-brandBlue transition-colors py-1">ABOUT</a>
+        <a href="#services" class="hover:text-brandBlue transition-colors py-1">TREATMENTS</a>
         <a href="#hydrafacial" class="hover:text-brandBlue text-brandTeal font-extrabold transition-colors py-1 flex items-center gap-1">
-          <span>Hydrafacial & Laser</span>
+          <span>HYDRAFACIAL & LASER</span>
           <i class="fa-solid fa-wand-magic-sparkles text-[10px]"></i>
         </a>
-        <a href="#gallery" class="hover:text-brandBlue transition-colors py-1">Gallery</a>
-        <!-- <a href="#social-feed" class="hover:text-brandBlue text-blue-600 transition-colors py-1">Videos</a> -->
-        <!-- <a href="#pan-india" class="hover:text-brandBlue transition-colors py-1">Reach</a> -->
-        <a href="#reviews" class="hover:text-brandBlue transition-colors py-1">Testimonials</a>
-        <a href="#contact" class="hover:text-brandBlue transition-colors py-1">Contact Us</a>
+        <a href="#gallery" class="hover:text-brandBlue transition-colors py-1">GALLERY</a>
+        <!-- <a href="#social-feed" class="hover:text-brandBlue text-blue-600 transition-colors py-1">VIDEOS</a> -->
+        <a href="#reviews" class="hover:text-brandBlue transition-colors py-1">TESTIMONIALS</a>
+        <a href="#contact" class="hover:text-brandBlue transition-colors py-1">CONTACT US</a>
       </nav>
 
-      <!-- Right Action Button & Emergency Call -->
+      <!-- Right Action Button -->
       <div class="hidden sm:flex items-center gap-3">
-        <a href="tel:9412441889" class="hidden 2xl:flex items-center gap-1.5 text-xs font-black text-slate-700 hover:text-brandBlue transition-colors">
-          <i class="fa-solid fa-phone text-brandRed"></i>
-          <span>9412441889</span>
-        </a>
         <a href="#contact" class="flex items-center gap-2 bg-brandRed hover:bg-brandRedHover text-white px-4 py-2 rounded-full font-bold text-xs sm:text-sm shadow-md shadow-brandRed/20 hover:scale-[1.02] active:scale-95 transition-all">
           <i class="fa-regular fa-calendar-check text-xs"></i>
           <span>Book Consultation</span>
@@ -331,18 +334,15 @@
 
     <!-- Mobile Dropdown Menu -->
     <div id="mobile-menu" class="hidden xl:hidden fixed top-[68px] left-0 w-full bg-white border-b border-slate-200 px-6 py-4 shadow-2xl space-y-3 z-[89]">
-      <a href="#home" class="mobile-nav-link block font-semibold text-brandRed">Home</a>
-      <a href="#about" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlue">About</a>
-      <a href="#doctor" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlue">Director</a>
-      <a href="#services" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlue">Treatments</a>
-      <a href="#hydrafacial" class="mobile-nav-link block font-bold text-brandTeal hover:text-brandBlue">Hydrafacial & Laser Tech</a>
-      <!-- <a href="#equipment" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlue">Clinic Technology</a> -->
-      <a href="#gallery" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlue">Clinic Gallery</a>
-      <!-- <a href="#social-feed" class="mobile-nav-link block font-semibold text-blue-600 hover:text-brandBlue">Facebook Videos</a> -->
-      <!-- <a href="#pan-india" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlue">Local & Nationwide Reach</a> -->
-      <a href="#reviews" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlue">Testimonials</a>
-      <!-- <a href="#faqs" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlue">10 FAQs</a> -->
-      <a href="#contact" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlue">Contact Us</a>
+      <a href="#home" class="mobile-nav-link block font-semibold text-brandRed">HOME</a>
+      <a href="#about" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlue">ABOUT</a>
+      <a href="#doctor" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlue">DIRECTOR</a>
+      <a href="#services" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlue">TREATMENTS</a>
+      <a href="#hydrafacial" class="mobile-nav-link block font-bold text-brandTeal hover:text-brandBlue">HYDRAFACIAL & LASER TECH</a>
+      <a href="#gallery" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlue">GALLERY</a>
+      <!-- <a href="#social-feed" class="mobile-nav-link block font-semibold text-blue-600 hover:text-brandBlue">VIDEOS</a> -->
+      <a href="#reviews" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlue">TESTIMONIALS</a>
+      <a href="#contact" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlue">CONTACT US</a>
       <div class="pt-2">
         <a href="#contact" class="mobile-nav-link flex items-center justify-center gap-2 w-full bg-brandRed text-white py-2.5 rounded-full font-bold text-sm shadow-md">
           <i class="fa-regular fa-calendar-check"></i> Book Appointment
@@ -351,7 +351,7 @@
     </div>
   </header>
 
-  <!-- ================= HERO VIEWPORT WRAPPER (100vh on Desktop, Fluid on Mobile) ================= -->
+  <!-- ================= HERO VIEWPORT WRAPPER ================= -->
   <div class="hero-viewport-wrap min-h-screen lg:h-screen w-full flex flex-col justify-between overflow-hidden relative bg-[radial-gradient(circle_at_12%_18%,rgba(0,82,204,0.10),transparent_35%),radial-gradient(circle_at_88%_30%,rgba(225,29,72,0.08),transparent_32%),linear-gradient(135deg,#ffffff_0%,#f0f7ff_48%,#f8fafc_100%)]">
     
     <!-- Background Grid Pattern -->
@@ -364,7 +364,7 @@
     <!-- ================= 2. HERO MAIN CONTENT ================= -->
     <main id="home" class="flex-grow w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:pl-6 lg:pr-0 grid grid-cols-1 lg:grid-cols-[48%_52%] items-stretch min-h-0">
       
-      <!-- Left Hero Column (Properly scaled & expanded vertically to fill empty spaces) -->
+      <!-- Left Hero Column -->
       <div class="lg:col-span-1 flex flex-col justify-center z-10 py-4 sm:py-6 lg:py-4 px-1 sm:px-3">
         
         <!-- Top Trust Badges -->
@@ -375,23 +375,17 @@
           </div>
           <a href="#reviews" class="inline-flex items-center gap-1.5 bg-amber-50 hover:bg-amber-100 border border-amber-300 text-amber-900 px-3.5 py-1 rounded-full text-xs font-black tracking-wide shadow-sm transition-colors">
             <i class="fa-solid fa-star text-amber-500"></i>
-            <span>4.9 GOOGLE RATING (100% SATISFACTION)</span>
+            <span>4.9 GOOGLE RATING (100% RESULTS)</span>
           </a>
         </div>
 
-        <!-- Dynamic Two-Color Heading -->
+        <!-- Dynamic Heading -->
         <h1 class="mt-1 tracking-tight mb-2 sm:mb-3">
-          <span class="font-cursive text-brandBlue text-5xl sm:text-6xl  xl:text-[3.75rem] leading-[1.05] font-bold flex items-center gap-2.5">
-            Flawless Skin, <br>Perfect Confidence
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="rgb(225 29 72)" stroke-width="2" stroke-linecap="round" class="w-8 h-8 sm:w-10 sm:h-10 lg:w-11 lg:h-11 shrink-0">
-              <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z"></path>
-              <path d="M8 12c1.5 2.5 6.5 2.5 8 0"></path>
-              <path d="M9 9h.01"></path>
-              <path d="M15 9h.01"></path>
-            </svg> -->
+          <span class="font-cursive text-brandBlue text-5xl sm:text-6xl xl:text-[3.75rem] leading-[1.05] font-bold flex items-center gap-2.5">
+            Flawless Skin, <br>Timeless Confidence
           </span>
           <span class="font-sans font-black text-slate-900 text-lg sm:text-xl lg:text-[1.32rem] xl:text-[1.5rem] block mt-1.5 pt-2 tracking-tight leading-snug">
-            Advanced Dermatology, <span class="text-brandRed">Laser Surgeries</span> & <span class="text-brandBlue">Allergy Solutions</span>
+            Advanced Dermatology, <span class="text-brandRed">Laser Treatments</span> & <span class="text-brandBlue">Allergy Solutions</span>
           </span>
         </h1>
 
@@ -417,8 +411,8 @@
         <div class="glass-card rounded-2xl shadow-xl flex items-center justify-between gap-3 max-w-lg border-l-4 border-l-brandBlue overflow-hidden h-[82px] sm:h-[88px] lg:h-[92px] pr-4 mb-3 sm:mb-3.5">
           <div class="flex items-center gap-3.5 h-full">
             <div class="h-full w-20 sm:w-24 shrink-0 overflow-hidden bg-gradient-to-tr from-brandBlueDark to-brandBlue flex items-center justify-center text-white border-r border-slate-200">
-<img src="images/Centered Car Portrait in White Shirt.webp">      
-      </div>
+              <img src="images/Centered Car Portrait in White Shirt.webp" alt="Dr. Ajay Mohan" class="w-full h-full object-cover" loading="lazy" decoding="async">      
+            </div>
             <div class="py-1">
               <h2 class="text-sm sm:text-base font-black text-brandBlue leading-tight">Dr. AJAY MOHAN</h2>
               <p class="text-xs sm:text-[13px] font-bold text-slate-700">M.B.B.S., M.D. (Skin & V.D.) — Gold Medalist</p>
@@ -438,89 +432,44 @@
 
       </div>
 
-      <!-- Right Hero Column (Takes 100% of visible space with ZERO top or bottom empty gaps) -->
+      <!-- Right Hero Column -->
       <div class="lg:col-span-1 w-full h-[300px] sm:h-[380px] lg:h-full relative flex items-stretch justify-end overflow-hidden lg:overflow-visible min-w-0">
         
-        <!-- Outer Decorative Rings (Desktop) -->
+        <!-- Outer Decorative Rings -->
         <div class="hidden lg:block absolute -right-4 w-[104%] h-full rounded-l-[320px] xl:rounded-l-[360px] border-4 border-rose-400/40 -z-0 translate-x-2"></div>
         <div class="hidden lg:block absolute -right-2 w-[104%] h-full rounded-l-[320px] xl:rounded-l-[360px] bg-gradient-to-r from-sky-400/20 via-rose-300/15 to-red-400/15 blur-xl -z-0"></div>
 
-        <!-- Masked Hero Image Slider Container (Touches navbar at top and stats strip at bottom) -->
+        <!-- Masked Hero Image Slider Container -->
         <div class="w-full h-full rounded-2xl lg:rounded-none lg:rounded-l-[320px] xl:rounded-l-[360px] overflow-hidden relative shadow-2xl border-2 sm:border-4 border-white z-10 bg-slate-900">
           
-          <!-- Slide 1 -->
           <div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-100 z-10">
             <img src="images/4.webp" alt="Dr Ajay Mohan Dermatologist Clinic Operatory Mau" class="w-full h-full object-cover object-center" width="1200" height="900" fetchpriority="high" decoding="async" />
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-900/20 to-transparent"></div>
-            <!-- <div class="absolute bottom-5 left-5 sm:bottom-7 sm:left-10 lg:bottom-8 lg:left-12 z-20 text-white max-w-md">
-              <span class="bg-brandBlue/90 backdrop-blur-sm px-3 py-1 rounded text-[11px] font-black uppercase tracking-wider">Clinical Excellence</span>
-              <h3 class="text-base sm:text-xl font-black mt-1">AMS Skin & Allergy Center® Mau</h3>
-              <p class="text-xs text-sky-200 hidden sm:block mt-0.5">State-of-the-art diagnostic Dermascope, Laser units & Hydrafacial suites.</p>
-            </div> -->
           </div>
 
-          
-          <!-- Slide 3 -->
           <div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-            <img src="images/14.webp" alt="Hydrafacial Treatment and Skin Glow Mau" class="w-full h-full object-cover object-center"  loading="lazy" decoding="async" />
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-900/20 to-transparent"></div>
-            <!-- <div class="absolute bottom-5 left-5 sm:bottom-7 sm:left-10 lg:bottom-8 lg:left-12 z-20 text-white max-w-md">
-              <span class="bg-brandTeal/90 backdrop-blur-sm px-3 py-1 rounded text-[11px] font-black uppercase tracking-wider">Aesthetic Dermatology</span>
-              <h3 class="text-base sm:text-xl font-black mt-1">Medical Hydrafacial & Glow Peels</h3>
-              <p class="text-xs text-teal-200 hidden sm:block mt-0.5">Deep pore cleansing, extraction, and instant complexion revitalization.</p>
-            </div> -->
+            <img src="images/14.webp" alt="Hydrafacial Treatment and Skin Glow Mau" class="w-full h-full object-cover object-center" loading="lazy" decoding="async" />
           </div>
 
-
-          
-
-          
-
-          <!-- Slide 4 -->
-          
-
           <div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-            <img src="images/11.webp" alt="Trichology and Hair Transplant Surgeon Mau" class="w-full h-full object-cover object-center"  loading="lazy" decoding="async" />
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-900/20 to-transparent"></div>
-            <!-- <div class="absolute bottom-5 left-5 sm:bottom-7 sm:left-10 lg:bottom-8 lg:left-12 z-20 text-white max-w-md">
-              <span class="bg-brandBlue/90 backdrop-blur-sm px-3 py-1 rounded text-[11px] font-black uppercase tracking-wider">Trichology Center</span>
-              <h3 class="text-base sm:text-xl font-black mt-1">Hair Loss & Hair Transplant</h3>
-              <p class="text-xs text-sky-200 hidden sm:block mt-0.5">Follicular restoration and medical therapies for lasting hair density.</p>
-            </div> -->
+            <img src="images/11.webp" alt="Trichology and Hair Transplant Surgeon Mau" class="w-full h-full object-cover object-center" loading="lazy" decoding="async" />
           </div>
-          <!-- Slide 2 -->
+
           <div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-            <img src="images/8.webp" alt="Laser Hair Removal and Tattoo Removal Mau" class="w-full h-full object-cover object-center"  loading="lazy" decoding="async" />
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-900/20 to-transparent"></div>
-            <!-- <div class="absolute bottom-5 left-5 sm:bottom-7 sm:left-10 lg:bottom-8 lg:left-12 z-20 text-white max-w-md">
-              <span class="bg-brandRed/90 backdrop-blur-sm px-3 py-1 rounded text-[11px] font-black uppercase tracking-wider">Laser & Cosmetology</span>
-              <h3 class="text-base sm:text-xl font-black mt-1">Laser Hair & Tattoo Removal</h3>
-              <p class="text-xs text-rose-200 hidden sm:block mt-0.5">US-FDA approved laser technologies for safe aesthetic transformations.</p>
-            </div> -->
+            <img src="images/8.webp" alt="Laser Hair Removal and Tattoo Removal Mau" class="w-full h-full object-cover object-center" loading="lazy" decoding="async" />
           </div>
+
           <div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-            <img src="images/10.webp" alt="Trichology and Hair Transplant Surgeon Mau" class="w-full h-full object-cover object-center"  loading="lazy" decoding="async" />
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-900/20 to-transparent"></div>
-            <!-- <div class="absolute bottom-5 left-5 sm:bottom-7 sm:left-10 lg:bottom-8 lg:left-12 z-20 text-white max-w-md">
-              <span class="bg-brandBlue/90 backdrop-blur-sm px-3 py-1 rounded text-[11px] font-black uppercase tracking-wider">Trichology Center</span>
-              <h3 class="text-base sm:text-xl font-black mt-1">Hair Loss & Hair Transplant</h3>
-              <p class="text-xs text-sky-200 hidden sm:block mt-0.5">Follicular restoration and medical therapies for lasting hair density.</p>
-            </div> -->
+            <img src="images/10.webp" alt="Trichology and Hair Transplant Surgeon Mau" class="w-full h-full object-cover object-center" loading="lazy" decoding="async" />
           </div>
+
           <div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-            <img src="images/17.webp" alt="Hydrafacial Treatment and Skin Glow Mau" class="w-full h-full object-cover object-center"  loading="lazy" decoding="async" />
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-900/20 to-transparent"></div>
-            <!-- <div class="absolute bottom-5 left-5 sm:bottom-7 sm:left-10 lg:bottom-8 lg:left-12 z-20 text-white max-w-md">
-              <span class="bg-brandTeal/90 backdrop-blur-sm px-3 py-1 rounded text-[11px] font-black uppercase tracking-wider">Aesthetic Dermatology</span>
-              <h3 class="text-base sm:text-xl font-black mt-1">Medical Hydrafacial & Glow Peels</h3>
-              <p class="text-xs text-teal-200 hidden sm:block mt-0.5">Deep pore cleansing, extraction, and instant complexion revitalization.</p>
-            </div> -->
+            <img src="images/2.webp" alt="Hydrafacial Treatment and Skin Glow Mau" class="w-full h-full object-cover object-center" loading="lazy" decoding="async" />
           </div>
 
           <!-- Active Clinic Status Badge -->
           <div class="absolute top-4 right-4 sm:top-6 sm:right-8 z-20 glass-card px-3.5 py-1.5 rounded-full shadow-md flex items-center gap-2 border border-white/80">
             <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
-            <span class="text-xs font-bold text-slate-800 tracking-wide">OPD: 10 AM - 6 PM</span>
+            <span class="text-xs font-bold text-slate-800 tracking-wide">OPD Timings: 10 AM - 6 PM</span>
           </div>
 
         </div>
@@ -534,7 +483,6 @@
       <div class="max-w-[1600px] mx-auto px-3 sm:px-6">
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-y-2 gap-x-2 sm:gap-4 items-center">
           
-          <!-- Item 1 -->
           <div class="flex items-center justify-start sm:justify-center gap-2.5 px-1 sm:px-2 border-r border-white/15">
             <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/15 backdrop-blur-sm flex items-center justify-center shrink-0 text-white shadow-inner">
               <i class="fa-solid fa-award text-xs sm:text-sm text-yellow-300"></i>
@@ -545,18 +493,16 @@
             </div>
           </div>
 
-          <!-- Item 2 -->
           <div class="flex items-center justify-start sm:justify-center gap-2.5 px-1 sm:px-2 lg:border-r border-white/15">
             <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/15 backdrop-blur-sm flex items-center justify-center shrink-0 text-white shadow-inner">
               <i class="fa-solid fa-star text-xs sm:text-sm text-amber-300"></i>
             </div>
             <div class="min-w-0">
               <div class="text-xs sm:text-base font-black text-white leading-none tracking-tight">4.9 / 5.0 Rating</div>
-              <div class="text-[9px] sm:text-xs text-sky-100 font-medium mt-0.5 truncate">100% Patient Satisfaction</div>
+              <div class="text-[9px] sm:text-xs text-sky-100 font-medium mt-0.5 truncate">100% Satisfaction</div>
             </div>
           </div>
 
-          <!-- Item 3 -->
           <div class="flex items-center justify-start sm:justify-center gap-2.5 px-1 sm:px-2 border-r border-white/15">
             <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/15 backdrop-blur-sm flex items-center justify-center shrink-0 text-white shadow-inner">
               <i class="fa-solid fa-user-clock text-xs sm:text-sm text-rose-200"></i>
@@ -567,14 +513,13 @@
             </div>
           </div>
 
-          <!-- Item 4 -->
           <div class="flex items-center justify-start sm:justify-center gap-2.5 px-1 sm:px-2">
             <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/15 backdrop-blur-sm flex items-center justify-center shrink-0 text-white shadow-inner">
               <i class="fa-solid fa-wand-magic-sparkles text-xs sm:text-sm text-cyan-300"></i>
             </div>
             <div class="min-w-0">
               <div class="text-xs sm:text-base font-black text-white leading-none tracking-tight">Laser & Surgery</div>
-              <div class="text-[9px] sm:text-xs text-rose-100 font-medium mt-0.5 truncate">Allergy & Skin Diagnostics</div>
+              <div class="text-[9px] sm:text-xs text-rose-100 font-medium mt-0.5 truncate">Expert Care</div>
             </div>
           </div>
 
@@ -651,7 +596,7 @@
           <div class="relative mx-auto max-w-md">
             
             <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100">
-              <img src="images/20.webp"AMS Skin & Allergy Center Interior Suite Mau" class="w-full h-auto object-cover"  loading="lazy" decoding="async" />
+              <img src="images/20.webp" alt="AMS Skin & Allergy Center Interior Suite Mau" class="w-full h-auto object-cover" loading="lazy" decoding="async" />
             </div>
 
             <!-- Floating Rating Card -->
@@ -668,9 +613,9 @@
             </div>
 
             <!-- Floating Experience Card -->
-            <div class="absolute -bottom-6 -left-6 bg-brandBlue text-white p-4 rounded-2xl shadow-xl max-w-[210px]">
+            <div class="absolute -bottom-6 -left-6 bg-brandBlue text-white p-2 pl-5 rounded-2xl shadow-xl max-w-[210px]">
               <div class="text-2xl font-black leading-none">10+ Years</div>
-              <p class="text-xs font-semibold text-sky-100 mt-1">Excellence in Skin & Allergy Diagnostics</p>
+              <p class="text-xs font-semibold text-sky-100 mt-1">Excellence in Skin & Allergy Treatments</p>
             </div>
 
           </div>
@@ -716,8 +661,8 @@
             
             <div class="relative shrink-0">
               <div class="w-40 h-40 sm:w-48 sm:h-48 rounded-3xl bg-gradient-to-br from-brandBlue to-slate-900 flex items-center justify-center text-white shadow-xl border-4 border-white group-hover:scale-105 transition-transform overflow-hidden">
-<img src="images/Centered Car Portrait in White Shirt.webp">              
-</div>
+                <img src="images/Centered Car Portrait in White Shirt.webp" alt="Dr. Ajay Mohan Dermatologist" class="w-full h-full object-cover" loading="lazy" decoding="async">              
+              </div>
               <div class="absolute -bottom-2.5 -right-2 bg-brandRed text-white text-[11px] font-black px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
                 Gold Medalist
               </div>
@@ -776,10 +721,10 @@
         <div class="w-24 h-1 bg-brandRed mx-auto rounded-full mt-4"></div>
       </div>
 
-      <!-- Categorized Grid: Strict adherence to all 21 raw data services with verified visible icons -->
+      <!-- Categorized Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         
-        <!-- Category 1: Clinical Dermatology & Skin Diseases -->
+        <!-- Category 1 -->
         <div class="glass-card service-gradient-card rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200/90 reveal group">
           <div class="w-12 h-12 rounded-xl bg-sky-100 text-brandBlue flex items-center justify-center text-xl mb-4 group-hover:bg-brandBlue group-hover:text-white transition-all shadow-sm shrink-0">
             <i class="fa-solid fa-hand-holding-medical"></i>
@@ -791,12 +736,11 @@
           <ul class="text-xs text-slate-600 space-y-1.5 font-semibold">
             <li><i class="fa-solid fa-check text-brandBlue mr-1.5"></i>Skin disease treatment</li>
             <li><i class="fa-solid fa-check text-brandBlue mr-1.5"></i>Fungal infection treatment</li>
-            <li><i class="fa-solid fa-check text-brandBlue mr-1.5"></i>Comprehensive skin examination</li>
             <li><i class="fa-solid fa-check text-brandTeal mr-1.5"></i>Video Dermascope high-res check</li>
           </ul>
         </div>
 
-        <!-- Category 2: Specialized Allergy Treatment -->
+        <!-- Category 2 -->
         <div class="glass-card service-gradient-card rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200/90 reveal group">
           <div class="w-12 h-12 rounded-xl bg-red-100 text-brandRed flex items-center justify-center text-xl mb-4 group-hover:bg-brandRed group-hover:text-white transition-all shadow-sm shrink-0">
             <i class="fa-solid fa-shield-virus"></i>
@@ -808,12 +752,11 @@
           <ul class="text-xs text-slate-600 space-y-1.5 font-semibold">
             <li><i class="fa-solid fa-check text-brandRed mr-1.5"></i>Complete Allergy treatment</li>
             <li><i class="fa-solid fa-check text-brandRed mr-1.5"></i>Chronic urticaria & hives management</li>
-            <li><i class="fa-solid fa-check text-brandRed mr-1.5"></i>Drug & contact dermatitis care</li>
             <li><i class="fa-solid fa-check text-brandRed mr-1.5"></i>Preventative allergy counseling</li>
           </ul>
         </div>
 
-        <!-- Category 3: Acne & Scar Revision -->
+        <!-- Category 3 -->
         <div class="glass-card service-gradient-card rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200/90 reveal group">
           <div class="w-12 h-12 rounded-xl bg-sky-100 text-brandBlue flex items-center justify-center text-xl mb-4 group-hover:bg-brandBlue group-hover:text-white transition-all shadow-sm shrink-0">
             <i class="fa-solid fa-face-smile"></i>
@@ -824,13 +767,12 @@
           </p>
           <ul class="text-xs text-slate-600 space-y-1.5 font-semibold">
             <li><i class="fa-solid fa-check text-brandBlue mr-1.5"></i>Acne treatment (Pimples & Cysts)</li>
-            <li><i class="fa-solid fa-check text-brandBlue mr-1.5"></i>Acne scar removal (Subcision / Laser)</li>
             <li><i class="fa-solid fa-check text-brandBlue mr-1.5"></i>Chemical Peeling (AHA / BHA)</li>
             <li><i class="fa-solid fa-check text-brandBlue mr-1.5"></i>Microdermabrasion resurfacing</li>
           </ul>
         </div>
 
-        <!-- Category 4: Pigmentation & White Patch Clinic -->
+        <!-- Category 4 -->
         <div class="glass-card service-gradient-card rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200/90 reveal group">
           <div class="w-12 h-12 rounded-xl bg-red-100 text-brandRed flex items-center justify-center text-xl mb-4 group-hover:bg-brandRed group-hover:text-white transition-all shadow-sm shrink-0">
             <i class="fa-solid fa-sun"></i>
@@ -841,13 +783,12 @@
           </p>
           <ul class="text-xs text-slate-600 space-y-1.5 font-semibold">
             <li><i class="fa-solid fa-check text-brandRed mr-1.5"></i>Pigmentation treatment (Melasma / Freckles)</li>
-            <li><i class="fa-solid fa-check text-brandRed mr-1.5"></i>Facial pigmentation treatment</li>
             <li><i class="fa-solid fa-check text-brandRed mr-1.5"></i>Examination / treatment of white patches</li>
             <li><i class="fa-solid fa-check text-brandRed mr-1.5"></i>Skin-whitening & glow therapies</li>
           </ul>
         </div>
 
-        <!-- Category 5: Laser Hair & Tattoo Removal -->
+        <!-- Category 5 -->
         <div class="glass-card service-gradient-card rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200/90 reveal group">
           <div class="w-12 h-12 rounded-xl bg-sky-100 text-brandBlue flex items-center justify-center text-xl mb-4 group-hover:bg-brandBlue group-hover:text-white transition-all shadow-sm shrink-0">
             <i class="fa-solid fa-wand-magic-sparkles"></i>
@@ -860,11 +801,10 @@
             <li><i class="fa-solid fa-check text-brandBlue mr-1.5"></i>Permanent Laser Hair Removal</li>
             <li><i class="fa-solid fa-check text-brandBlue mr-1.5"></i>Advanced Tattoo Removal</li>
             <li><i class="fa-solid fa-check text-brandBlue mr-1.5"></i>Radio Cautery (Warts & Skin tags)</li>
-            <li><i class="fa-solid fa-check text-brandBlue mr-1.5"></i>Minimal downtime, safe on all skin tones</li>
           </ul>
         </div>
 
-        <!-- Category 6: Trichology & Hair Transplant -->
+        <!-- Category 6 -->
         <div class="glass-card service-gradient-card rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200/90 reveal group">
           <div class="w-12 h-12 rounded-xl bg-red-100 text-brandRed flex items-center justify-center text-xl mb-4 group-hover:bg-brandRed group-hover:text-white transition-all shadow-sm shrink-0">
             <i class="fa-solid fa-scissors"></i>
@@ -874,14 +814,13 @@
             Holistic medical and surgical therapies to arrest hair fall and reconstruct natural hairlines.
           </p>
           <ul class="text-xs text-slate-600 space-y-1.5 font-semibold">
-            <li><i class="fa-solid fa-check text-brandRed mr-1.5"></i>Hair loss treatment (Alopecia / Thinning)</li>
+            <li><i class="fa-solid fa-check text-brandRed mr-1.5"></i>Hair loss treatment</li>
             <li><i class="fa-solid fa-check text-brandRed mr-1.5"></i>Hair Transplant surgery</li>
             <li><i class="fa-solid fa-check text-brandRed mr-1.5"></i>Dermascopic scalp examination</li>
-            <li><i class="fa-solid fa-check text-brandRed mr-1.5"></i>Dandruff & scalp infection control</li>
           </ul>
         </div>
 
-        <!-- Category 7: Medi-Facial & Rejuvenation -->
+        <!-- Category 7 -->
         <div class="glass-card service-gradient-card rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200/90 reveal group">
           <div class="w-12 h-12 rounded-xl bg-sky-100 text-brandBlue flex items-center justify-center text-xl mb-4 group-hover:bg-brandBlue group-hover:text-white transition-all shadow-sm shrink-0">
             <i class="fa-solid fa-droplet"></i>
@@ -893,12 +832,11 @@
           <ul class="text-xs text-slate-600 space-y-1.5 font-semibold">
             <li><i class="fa-solid fa-check text-brandBlue mr-1.5"></i>Clinical Hydrafacial Treatment</li>
             <li><i class="fa-solid fa-check text-brandBlue mr-1.5"></i>Microdermabrasion exfoliation</li>
-            <li><i class="fa-solid fa-check text-brandBlue mr-1.5"></i>Chemical Peeling glow therapies</li>
             <li><i class="fa-solid fa-check text-brandBlue mr-1.5"></i>Skin-whitening & radiant brightening</li>
           </ul>
         </div>
 
-        <!-- Category 8: Nail Surgery & Nail Diseases -->
+        <!-- Category 8 -->
         <div class="glass-card service-gradient-card rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200/90 reveal group">
           <div class="w-12 h-12 rounded-xl bg-red-100 text-brandRed flex items-center justify-center text-xl mb-4 group-hover:bg-brandRed group-hover:text-white transition-all shadow-sm shrink-0">
             <i class="fa-solid fa-hand"></i>
@@ -910,7 +848,6 @@
           <ul class="text-xs text-slate-600 space-y-1.5 font-semibold">
             <li><i class="fa-solid fa-check text-brandRed mr-1.5"></i>Precision Nail Surgery</li>
             <li><i class="fa-solid fa-check text-brandRed mr-1.5"></i>Treatment of nail-related diseases</li>
-            <li><i class="fa-solid fa-check text-brandRed mr-1.5"></i>Ingrown toenail correction</li>
             <li><i class="fa-solid fa-check text-brandRed mr-1.5"></i>Fungal nail infection (Onychomycosis)</li>
           </ul>
         </div>
@@ -920,7 +857,7 @@
     </div>
   </section>
 
-  <!-- ================= 7. SPECIAL SPOTLIGHT: HYDRAFACIAL & LASER TECH (Fixed Image + Fallback) ================= -->
+  <!-- ================= 7. SPECIAL SPOTLIGHT: HYDRAFACIAL & LASER TECH ================= -->
   <section id="hydrafacial" class="py-20 bg-gradient-to-br from-slate-900 via-brandBlueDark to-slate-950 text-white relative overflow-hidden border-b border-sky-900/50">
     <div class="absolute -top-16 -right-16 w-80 h-80 bg-brandTeal/20 rounded-full blur-3xl pointer-events-none"></div>
     <div class="absolute -bottom-16 -left-16 w-80 h-80 bg-brandRed/25 rounded-full blur-3xl pointer-events-none"></div>
@@ -974,14 +911,13 @@
         <div class="lg:col-span-5 reveal">
           <div class="relative mx-auto max-w-sm rounded-3xl overflow-hidden border-2 border-white/20 shadow-2xl group">
             <img 
-              src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1000&q=80" 
+              src="images/laser.png" 
               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=80';"
               alt="Hydrafacial & Laser Cosmetology Procedure" 
               class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500" 
-             loading="lazy" decoding="async" />
+              loading="lazy" decoding="async" />
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
             <div class="absolute bottom-6 left-6 right-6 text-center">
-              <span class="bg-brandRed text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-wider">US-FDA Standard Care</span>
               <h3 class="text-lg font-black text-white mt-2">Zero Downtime • Instant Glow</h3>
             </div>
           </div>
@@ -991,7 +927,7 @@
     </div>
   </section>
 
-  <!-- ================= 8. INTERACTIVE BEFORE / AFTER SHOWCASE ================= -->
+  <!-- ================= 8. BEFORE / AFTER SHOWCASE ================= -->
   <section id="results" class="py-20 bg-slate-900 text-white relative overflow-hidden">
     <div class="absolute -top-12 -left-12 w-80 h-80 bg-brandBlue/30 rounded-full blur-3xl pointer-events-none"></div>
     <div class="absolute -bottom-12 -right-12 w-80 h-80 bg-brandRed/30 rounded-full blur-3xl pointer-events-none"></div>
@@ -1054,13 +990,13 @@
             <div class="relative w-full aspect-[4/3] sm:aspect-[16/10] overflow-hidden rounded-xl select-none" id="twc-slider-container">
               
               <!-- After Image -->
-              <img src="images/t2.webp" alt="After Skin & Acne Scar Treatment" class="absolute inset-0 w-full h-full object-cover pointer-events-none"  loading="lazy" decoding="async" />
+              <img src="images/t2.webp" alt="After Skin & Acne Scar Treatment" class="absolute inset-0 w-full h-full object-cover pointer-events-none" loading="lazy" decoding="async" />
               <span class="absolute top-4 right-4 z-10 bg-emerald-600/90 backdrop-blur-sm text-white text-xs font-black px-3 py-1.5 rounded-md uppercase tracking-wider select-none">
                 After Therapy
               </span>
 
               <!-- Before Image -->
-              <img id="twc-before-img" src="images/t1.webp" alt="Before Skin Treatment" class="absolute inset-0 w-full h-full object-cover pointer-events-none"   loading="lazy" decoding="async" />
+              <img id="twc-before-img" src="images/t1.webp" alt="Before Skin Treatment" class="absolute inset-0 w-full h-full object-cover pointer-events-none" loading="lazy" decoding="async" />
               <span class="absolute top-4 left-4 z-10 bg-amber-600/90 backdrop-blur-sm text-white text-xs font-black px-3 py-1.5 rounded-md uppercase tracking-wider select-none">
                 Before Therapy
               </span>
@@ -1139,7 +1075,6 @@
           </p>
         </div>
 
-        <!-- Diamond-tip Microdermabrasion with Verified Visible fa-gem Icon -->
         <div class="equip-gradient-card rounded-2xl p-6 shadow-md border border-slate-200/90 reveal">
           <div class="w-12 h-12 rounded-xl bg-sky-100 text-brandBlue flex items-center justify-center text-xl mb-4 shrink-0">
             <i class="fa-solid fa-gem"></i>
@@ -1150,7 +1085,6 @@
           </p>
         </div>
 
-        <!-- Chemical Peels with Verified fa-flask Icon -->
         <div class="equip-gradient-card rounded-2xl p-6 shadow-md border border-slate-200/90 reveal">
           <div class="w-12 h-12 rounded-xl bg-red-100 text-brandRed flex items-center justify-center text-xl mb-4 shrink-0">
             <i class="fa-solid fa-flask"></i>
@@ -1186,7 +1120,7 @@
     </div>
   </section>
 
-  <!-- ================= 10. CLINIC GALLERY TOUR (No Sliding Dots) ================= -->
+  <!-- ================= 10. CLINIC GALLERY TOUR ================= -->
   <section id="gallery" class="py-20 bg-slate-950 text-white overflow-hidden relative border-t border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
@@ -1194,179 +1128,36 @@
         <span class="text-xs font-black text-brandRed uppercase tracking-widest block">
           Clinical Walkthrough
         </span>
-
         <h2 class="text-3xl sm:text-4xl font-black text-white">
           AMS Skin & Allergy Center® Tour
         </h2>
-
         <p class="text-slate-400 text-sm">
-          A glimpse into our consultation chambers, sterile laser operatory, and advanced cosmetology lounges in Mau.
+          A glimpse into our consultation chambers, waiting areas, and advanced cosmetology lounges in Mau.
         </p>
-
         <div class="w-20 h-1 bg-brandBlue mx-auto rounded-full mt-3"></div>
       </div>
 
-      <!-- Gallery Slider Container (NO DOTS AT BOTTOM) -->
+      <!-- Gallery Slider Container -->
       <div class="relative w-full max-w-5xl mx-auto h-[260px] sm:h-[450px] lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl bg-slate-900 border border-slate-800">
         
         <div id="galleryTrack" class="absolute inset-0 flex transition-transform duration-700 ease-in-out h-full">
-
-          <!-- 1 -->
-          <div class="min-w-full h-full relative">
-            <img src="images/1.webp" alt="Consultation Suite" class="w-full h-full object-cover">
-            <!-- <div class="absolute bottom-4 left-6 bg-slate-950/70 backdrop-blur-sm px-4 py-1.5 rounded-xl border border-white/10 text-xs font-bold text-white">
-              Dr. Ajay Mohan Consultation Chamber
-            </div> -->
-          </div>
-
-          <!-- 2 -->
-          <div class="min-w-full h-full relative">
-            <img src="images/2.webp" alt="Advanced Laser Suite" class="w-full h-full object-cover">
-            <!-- <div class="absolute bottom-4 left-6 bg-slate-950/70 backdrop-blur-sm px-4 py-1.5 rounded-xl border border-white/10 text-xs font-bold text-white">
-              US-FDA Approved Laser Room
-            </div> -->
-          </div>
-
-          <!-- 3 -->
-          <div class="min-w-full h-full relative">
-            <img src="images/3.webp" alt="Hydrafacial & Cosmetology Station" class="w-full h-full object-cover">
-            <!-- <div class="absolute bottom-4 left-6 bg-slate-950/70 backdrop-blur-sm px-4 py-1.5 rounded-xl border border-white/10 text-xs font-bold text-white">
-              Hydrafacial & Skin Rejuvenation Suite
-            </div> -->
-          </div>
-
-          <!-- 4 -->
-          <div class="min-w-full h-full relative">
-            <img src="images/4.webp" alt="Reception & Waiting Lounge" class="w-full h-full object-cover">
-            <!-- <div class="absolute bottom-4 left-6 bg-slate-950/70 backdrop-blur-sm px-4 py-1.5 rounded-xl border border-white/10 text-xs font-bold text-white">
-              Comfortable Patient Waiting Lounge
-            </div> -->
-          </div>
-
-          <!-- 5 -->
-          <div class="min-w-full h-full relative">
-            <img src="images/5.webp" alt="Dermatosurgery Suite" class="w-full h-full object-cover">
-            <!-- <div class="absolute bottom-4 left-6 bg-slate-950/70 backdrop-blur-sm px-4 py-1.5 rounded-xl border border-white/10 text-xs font-bold text-white">
-              Trichology & Minor Dermatosurgery Unit
-            </div> -->
-          </div>
-
-           <div class="min-w-full h-full relative">
-            <img src="images/2.webp" alt="Advanced Laser Suite" class="w-full h-full object-cover">
-            <!-- <div class="absolute bottom-4 left-6 bg-slate-950/70 backdrop-blur-sm px-4 py-1.5 rounded-xl border border-white/10 text-xs font-bold text-white">
-              US-FDA Approved Laser Room
-            </div> -->
-          </div>
-
-          <!-- 3 -->
-          <div class="min-w-full h-full relative">
-            <img src="images/3.webp" alt="Hydrafacial & Cosmetology Station" class="w-full h-full object-cover">
-            <!-- <div class="absolute bottom-4 left-6 bg-slate-950/70 backdrop-blur-sm px-4 py-1.5 rounded-xl border border-white/10 text-xs font-bold text-white">
-              Hydrafacial & Skin Rejuvenation Suite
-            </div> -->
-          </div>
-
-          <!-- 4 -->
-          <div class="min-w-full h-full relative">
-            <img src="images/4.webp" alt="Reception & Waiting Lounge" class="w-full h-full object-cover">
-            <!-- <div class="absolute bottom-4 left-6 bg-slate-950/70 backdrop-blur-sm px-4 py-1.5 rounded-xl border border-white/10 text-xs font-bold text-white">
-              Comfortable Patient Waiting Lounge
-            </div> -->
-          </div>
-
-          <!-- 5 -->
-          <div class="min-w-full h-full relative">
-            <img src="images/5.webp" alt="Dermatosurgery Suite" class="w-full h-full object-cover">
-            <!-- <div class="absolute bottom-4 left-6 bg-slate-950/70 backdrop-blur-sm px-4 py-1.5 rounded-xl border border-white/10 text-xs font-bold text-white">
-              Trichology & Minor Dermatosurgery Unit
-            </div> -->
-          </div>
-
-           <div class="min-w-full h-full relative">
-            <img src="images/6.webp" alt="Advanced Laser Suite" class="w-full h-full object-cover">
-            <!-- <div class="absolute bottom-4 left-6 bg-slate-950/70 backdrop-blur-sm px-4 py-1.5 rounded-xl border border-white/10 text-xs font-bold text-white">
-              US-FDA Approved Laser Room
-            </div> -->
-          </div>
-
-          <!-- 3 -->
-          <div class="min-w-full h-full relative">
-            <img src="images/7.webp" alt="Hydrafacial & Cosmetology Station" class="w-full h-full object-cover">
-            <!-- <div class="absolute bottom-4 left-6 bg-slate-950/70 backdrop-blur-sm px-4 py-1.5 rounded-xl border border-white/10 text-xs font-bold text-white">
-              Hydrafacial & Skin Rejuvenation Suite
-            </div> -->
-          </div>
-
-          <!-- 4 -->
-          <div class="min-w-full h-full relative">
-            <img src="images/8.webp" alt="Reception & Waiting Lounge" class="w-full h-full object-cover">
-            <!-- <div class="absolute bottom-4 left-6 bg-slate-950/70 backdrop-blur-sm px-4 py-1.5 rounded-xl border border-white/10 text-xs font-bold text-white">
-              Comfortable Patient Waiting Lounge
-            </div> -->
-          </div>
-
-          <!-- 5 -->
-          <div class="min-w-full h-full relative">
-            <img src="images/9.webp" alt="Dermatosurgery Suite" class="w-full h-full object-cover">
-            <!-- <div class="absolute bottom-4 left-6 bg-slate-950/70 backdrop-blur-sm px-4 py-1.5 rounded-xl border border-white/10 text-xs font-bold text-white">
-              Trichology & Minor Dermatosurgery Unit
-            </div> -->
-          </div>
-
-           <div class="min-w-full h-full relative">
-            <img src="images/10.webp" alt="Advanced Laser Suite" class="w-full h-full object-cover">
-            <!-- <div class="absolute bottom-4 left-6 bg-slate-950/70 backdrop-blur-sm px-4 py-1.5 rounded-xl border border-white/10 text-xs font-bold text-white">
-              US-FDA Approved Laser Room
-            </div> -->
-          </div>
-
-          <!-- 3 -->
-          <div class="min-w-full h-full relative">
-            <img src="images/11.webp" alt="Hydrafacial & Cosmetology Station" class="w-full h-full object-cover">
-            <!-- <div class="absolute bottom-4 left-6 bg-slate-950/70 backdrop-blur-sm px-4 py-1.5 rounded-xl border border-white/10 text-xs font-bold text-white">
-              Hydrafacial & Skin Rejuvenation Suite
-            </div> -->
-          </div>
-
-          <!-- 4 -->
-          <div class="min-w-full h-full relative">
-            <img src="images/13.webp" alt="Reception & Waiting Lounge" class="w-full h-full object-cover">
-            <!-- <div class="absolute bottom-4 left-6 bg-slate-950/70 backdrop-blur-sm px-4 py-1.5 rounded-xl border border-white/10 text-xs font-bold text-white">
-              Comfortable Patient Waiting Lounge
-            </div> -->
-          </div>
-
-          <!-- 5 -->
-          <div class="min-w-full h-full relative">
-            <img src="images/14.webp" alt="Dermatosurgery Suite" class="w-full h-full object-cover">
-            <!-- <div class="absolute bottom-4 left-6 bg-slate-950/70 backdrop-blur-sm px-4 py-1.5 rounded-xl border border-white/10 text-xs font-bold text-white">
-              Trichology & Minor Dermatosurgery Unit
-            </div> -->
-          </div>
-
-           <div class="min-w-full h-full relative">
-            <img src="images/15.webp" alt="Advanced Laser Suite" class="w-full h-full object-cover">
-            <!-- <div class="absolute bottom-4 left-6 bg-slate-950/70 backdrop-blur-sm px-4 py-1.5 rounded-xl border border-white/10 text-xs font-bold text-white">
-              US-FDA Approved Laser Room
-            </div> -->
-          </div>
-
-          <!-- 3 -->
-          <div class="min-w-full h-full relative">
-            <img src="images/16.webp" alt="Hydrafacial & Cosmetology Station" class="w-full h-full object-cover">
-            <!-- <div class="absolute bottom-4 left-6 bg-slate-950/70 backdrop-blur-sm px-4 py-1.5 rounded-xl border border-white/10 text-xs font-bold text-white">
-              Hydrafacial & Skin Rejuvenation Suite
-            </div> -->
-          </div>
-
-          <!-- 4 -->
-          <div class="min-w-full h-full relative">
-            <img src="images/19.webp" alt="Reception & Waiting Lounge" class="w-full h-full object-cover">
-            <!-- <div class="absolute bottom-4 left-6 bg-slate-950/70 backdrop-blur-sm px-4 py-1.5 rounded-xl border border-white/10 text-xs font-bold text-white">
-              Comfortable Patient Waiting Lounge
-            </div> -->
-          </div>
-
+          <div class="min-w-full h-full relative"><img src="images/1.webp" alt="Consultation Suite" class="w-full h-full object-cover"></div>
+          <div class="min-w-full h-full relative"><img src="images/2.webp" alt="Advanced Laser Suite" class="w-full h-full object-cover"></div>
+          <div class="min-w-full h-full relative"><img src="images/3.webp" alt="Hydrafacial & Cosmetology Station" class="w-full h-full object-cover"></div>
+          <div class="min-w-full h-full relative"><img src="images/4.webp" alt="Reception & Waiting Lounge" class="w-full h-full object-cover"></div>
+          <div class="min-w-full h-full relative"><img src="images/5.webp" alt="Dermatosurgery Suite" class="w-full h-full object-cover"></div>
+          <div class="min-w-full h-full relative"><img src="images/7.webp" alt="Hydrafacial & Cosmetology Station" class="w-full h-full object-cover"></div>
+          <div class="min-w-full h-full relative"><img src="images/8.webp" alt="Reception & Waiting Lounge" class="w-full h-full object-cover"></div>
+          <div class="min-w-full h-full relative"><img src="images/9.webp" alt="Dermatosurgery Suite" class="w-full h-full object-cover"></div>
+          <div class="min-w-full h-full relative"><img src="images/10.webp" alt="Advanced Laser Suite" class="w-full h-full object-cover"></div>
+          <div class="min-w-full h-full relative"><img src="images/11.webp" alt="Hydrafacial & Cosmetology Station" class="w-full h-full object-cover"></div>
+          <div class="min-w-full h-full relative"><img src="images/14.webp" alt="Dermatosurgery Suite" class="w-full h-full object-cover"></div>
+          <div class="min-w-full h-full relative"><img src="images/21.webp" alt="Advanced Laser Suite" class="w-full h-full object-cover"></div>
+          <div class="min-w-full h-full relative"><img src="images/16.webp" alt="Hydrafacial & Cosmetology Station" class="w-full h-full object-cover"></div>
+          <div class="min-w-full h-full relative"><img src="images/19.webp" alt="Reception & Waiting Lounge" class="w-full h-full object-cover"></div>
+          <div class="min-w-full h-full relative"><img src="images/18.webp" alt="Hydrafacial & Cosmetology Station" class="w-full h-full object-cover"></div>
+          <div class="min-w-full h-full relative"><img src="images/round-logo.png" alt="Reception & Waiting Lounge" class="w-full h-full object-contain"></div>
+          <div class="min-w-full h-full relative"><img src="images/12.webp" alt="Dermatosurgery Suite" class="w-full h-full object-cover"></div>
         </div>
 
         <!-- Previous Button -->
@@ -1383,7 +1174,7 @@
     </div>
   </section>
 
-  <!-- ================= 11. SOCIAL MEDIA & EMBEDDED FACEBOOK VIDEOS ================= -->
+  <!-- ================= 11. SOCIAL MEDIA & EMBEDDED FACEBOOK REEL ================= -->
   <section id="social-feed" class="py-20 bg-slate-900 text-white relative overflow-hidden border-t border-slate-800">
     <div class="absolute -top-12 -left-12 w-80 h-80 bg-blue-600/15 rounded-full blur-3xl pointer-events-none"></div>
     <div class="absolute -bottom-12 -right-12 w-80 h-80 bg-brandRed/15 rounded-full blur-3xl pointer-events-none"></div>
@@ -1392,15 +1183,15 @@
       
       <div class="text-center max-w-3xl mx-auto mb-12 reveal">
         <div class="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-400/30 text-blue-300 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider mb-3">
-          <i class="fa-brands fa-facebook-f text-base"></i> Official Media & Clinical Videos
+          <i class="fa-brands fa-facebook-f text-base"></i> VIDEO REELS & SOCIAL UPDATES
         </div>
 
         <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-white leading-tight">
-          Watch Real Procedures on Our <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-sky-300 to-rose-400">Facebook Channel</span>
+          Follow Our <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-sky-300 to-rose-400">Facebook Channel</span>
         </h2>
 
         <p class="text-slate-300 text-sm sm:text-base mt-4 font-normal leading-relaxed">
-          Watch real patient testimonials, clinical explanations, and treatments conducted by Dr. Ajay Mohan at AMS Skin & Allergy Center®. Click below to watch the videos directly on Facebook.
+          Watch real patient testimonials, clinical explanations, and treatments conducted by Dr. Ajay Mohan at AMS Skin & Allergy Center®. Play the reel directly below or visit our Facebook channel.
         </p>
 
         <!-- Social Action Buttons -->
@@ -1420,93 +1211,52 @@
         </div>
       </div>
 
-      <!-- Verified Custom Facebook Video Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto reveal">
-        
-        <!-- Video Card 1 -->
-        <div class="group relative rounded-3xl overflow-hidden shadow-2xl border border-white/10 bg-slate-950 flex flex-col hover:border-blue-500 transition-all duration-300">
-          <div class="relative w-full h-[340px] sm:h-[400px] overflow-hidden bg-slate-900">
-            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80" alt="Clinical Video Reel" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-75"  loading="lazy" decoding="async" />
-            
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
-
-            <div class="absolute top-4 left-4 flex items-center gap-2">
-              <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-[11px] font-black uppercase tracking-wider flex items-center gap-1.5 shadow-md">
-                <i class="fa-brands fa-facebook"></i> Facebook Reel
-              </span>
-            </div>
-
-            <!-- Central Animated Play Button -->
-            <a href="https://www.facebook.com/share/r/1J3Tar7ABp/" target="_blank" rel="noopener noreferrer" class="absolute inset-0 flex items-center justify-center" aria-label="Play Reel 1 on Facebook">
-              <div class="w-18 h-18 sm:w-20 sm:h-20 rounded-full bg-blue-600/90 text-white flex items-center justify-center text-3xl shadow-2xl group-hover:scale-110 group-hover:bg-blue-500 transition-all border-4 border-white/20">
-                <i class="fa-solid fa-play ml-1"></i>
-              </div>
-            </a>
-
-            <!-- Bottom Video Details -->
-            <div class="absolute bottom-4 left-4 right-4 text-white">
-              <h3 class="text-base sm:text-lg font-black leading-tight group-hover:text-sky-300 transition-colors">
-                Dr. Ajay Mohan Clinical Reel: Allergy & Skin Diagnosis
-              </h3>
-              <p class="text-xs text-slate-300 mt-1 line-clamp-2">
-                Watch case analysis and treatment explanation by Dr. Ajay Mohan at AMS Skin & Allergy Center® Mau.
-              </p>
-            </div>
+      <!-- Embedded Facebook Reel Container (Direct In-Page Playback & Mobile Responsive) -->
+      <div class="max-w-md mx-auto reveal">
+        <div class="group relative rounded-3xl overflow-hidden shadow-2xl border border-white/10 bg-slate-950 p-4 sm:p-6 flex flex-col items-center hover:border-blue-500/50 transition-all duration-300">
+          
+          <!-- Responsive Video Frame -->
+          <div class="w-full flex justify-center items-center overflow-hidden rounded-2xl bg-black shadow-inner">
+            <iframe 
+              src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F27033110103046127%2F&show_text=false&width=267&t=0" 
+              width="267" 
+              height="476" 
+              style="border:none;overflow:hidden;max-width:100%;display:block;" 
+              scrolling="no" 
+              frameborder="0" 
+              allowfullscreen="true" 
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+              loading="lazy"
+              title="Dr. Ajay Mohan Facebook Clinical Reel - AMS Skin & Allergy Center"
+              class="rounded-xl shadow-lg mx-auto"
+            ></iframe>
           </div>
 
-          <div class="p-4 bg-slate-900 flex items-center justify-between border-t border-white/10">
+          <!-- Video Details -->
+          <div class="mt-5 text-center w-full px-2">
+            <div class="inline-flex items-center gap-1.5 bg-blue-600/20 text-blue-400 border border-blue-500/30 px-3 py-1 rounded-full text-[11px] font-black uppercase tracking-wider mb-2">
+              <i class="fa-brands fa-facebook"></i> Featured Testimonial
+            </div>
+            <!-- <h3 class="text-base sm:text-lg font-black text-white leading-snug">
+              Dr. Ajay Mohan: Clinical Procedure & Diagnosis
+            </h3> -->
+            <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">
+              Patient praises Dr. Ajay Mohan & AMS Skin & Allergy Center® for effective treatment, highlighting the clinic's advanced technology and compassionate care.
+            </p>
+          </div>
+
+          <!-- Card Bottom Actions -->
+          <div class="w-full mt-4 pt-4 border-t border-white/10 flex items-center justify-between">
             <span class="text-xs text-slate-400 font-semibold flex items-center gap-1.5">
-              <i class="fa-solid fa-check-circle text-emerald-400"></i> Verified Medical Guidance
+              <i class="fa-solid fa-check-circle text-emerald-400"></i> Verified Testimonial
             </span>
-            <a href="https://www.facebook.com/share/r/1J3Tar7ABp/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold px-4 py-2 rounded-full transition-colors shadow">
-              <span>Watch on Facebook</span>
+            <a href="https://www.facebook.com/reel/27033110103046127/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold px-4 py-2 rounded-full transition-colors shadow">
+              <span>Open on Facebook</span>
               <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
             </a>
           </div>
+
         </div>
-
-        <!-- Video Card 2 -->
-        <div class="group relative rounded-3xl overflow-hidden shadow-2xl border border-white/10 bg-slate-950 flex flex-col hover:border-blue-500 transition-all duration-300">
-          <div class="relative w-full h-[340px] sm:h-[400px] overflow-hidden bg-slate-900">
-            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80" alt="Clinical Video Session" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-75"  loading="lazy" decoding="async" />
-            
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
-
-            <div class="absolute top-4 left-4 flex items-center gap-2">
-              <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-[11px] font-black uppercase tracking-wider flex items-center gap-1.5 shadow-md">
-                <i class="fa-brands fa-facebook"></i> Facebook Video
-              </span>
-            </div>
-
-            <!-- Central Animated Play Button -->
-            <a href="https://www.facebook.com/share/v/19mwiMbPa1/" target="_blank" rel="noopener noreferrer" class="absolute inset-0 flex items-center justify-center" aria-label="Play Video 2 on Facebook">
-              <div class="w-18 h-18 sm:w-20 sm:h-20 rounded-full bg-blue-600/90 text-white flex items-center justify-center text-3xl shadow-2xl group-hover:scale-110 group-hover:bg-blue-500 transition-all border-4 border-white/20">
-                <i class="fa-solid fa-play ml-1"></i>
-              </div>
-            </a>
-
-            <!-- Bottom Video Details -->
-            <div class="absolute bottom-4 left-4 right-4 text-white">
-              <h3 class="text-base sm:text-lg font-black leading-tight group-hover:text-sky-300 transition-colors">
-                Comprehensive Dermatological Procedure & Clinic Tour
-              </h3>
-              <p class="text-xs text-slate-300 mt-1 line-clamp-2">
-                Demonstrating sterile medical laser techniques, skin care infrastructure, and patient consultation.
-              </p>
-            </div>
-          </div>
-
-          <div class="p-4 bg-slate-900 flex items-center justify-between border-t border-white/10">
-            <span class="text-xs text-slate-400 font-semibold flex items-center gap-1.5">
-              <i class="fa-solid fa-check-circle text-emerald-400"></i> In-Clinic Patient Care
-            </span>
-            <a href="https://www.facebook.com/share/v/19mwiMbPa1/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold px-4 py-2 rounded-full transition-colors shadow">
-              <span>Watch on Facebook</span>
-              <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-            </a>
-          </div>
-        </div>
-
       </div>
 
     </div>
@@ -1575,7 +1325,7 @@
     </div>
   </section>
 
-  <!-- ================= 13. LOCAL REACH + NATIONWIDE BRAG SECTION ================= -->
+  <!-- ================= 13. LOCAL REACH + NATIONWIDE REACH SECTION ================= -->
   <section id="pan-india" class="py-20 sm:py-24 relative overflow-hidden border-t border-white/10 bg-slate-950 text-white">
     <div class="absolute inset-0 pointer-events-none overflow-hidden">
       <div class="absolute -top-24 -left-24 w-72 h-72 sm:w-96 sm:h-96 rounded-full bg-brandBlue/20 blur-[110px]"></div>
@@ -1634,7 +1384,6 @@
 
       <!-- 16 Nearby & Regional Localities Grid -->
       <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 reveal">
-
         <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-50 via-sky-100 to-blue-200 border border-slate-200 shadow-md hover:from-brandBlueDark hover:via-brandBlue hover:to-[#1769c2] transition-all duration-300">
           <div class="flex items-center gap-3">
             <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-sky-100 text-brandBlue group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
@@ -1778,7 +1527,6 @@
             <span class="text-slate-800 group-hover:text-white font-bold text-xs sm:text-sm">Gorakhpur Highway</span>
           </div>
         </div>
-
       </div>
 
     </div>
@@ -1973,7 +1721,6 @@
 
     </div>
   </section>
-
 
   <!-- ================= 16. CONTACT & DIRECT WHATSAPP APPOINTMENT ================= -->
   <section id="contact" class="py-20 bg-gradient-to-b from-[#e8f1fb] via-[#e2edf8] to-[#edf4fc] relative border-b border-slate-200">
@@ -2171,7 +1918,7 @@
 
       </div>
 
-      <!-- Verified Google Maps Embed from Raw Data -->
+      <!-- Verified Google Maps Embed -->
       <div class="mt-16 reveal">
         <div class="text-center mb-6">
           <h3 class="text-xl font-black text-slate-900">Locate AMS Skin & Allergy Center®</h3>
@@ -2204,8 +1951,16 @@
         <!-- Brand Info -->
         <div class="lg:col-span-2 space-y-4">
           <div class="flex items-center gap-3">
-            <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-brandBlue to-brandRed text-white flex items-center justify-center shadow-lg text-xl shrink-0">
-              <i class="fa-solid fa-hand-holding-medical"></i>
+            <div class="w-11 h-11 rounded-full overflow-hidden flex items-center justify-center shadow-lg shrink-0">
+              <img
+                src="images/round-logo.png"
+                alt="Clinic Logo"
+                class="w-full h-full object-cover"
+                width="44"
+                height="44"
+                loading="lazy"
+                decoding="async"
+              >
             </div>
             <div>
               <div class="text-xl font-black">AMS SKIN & <span class="text-brandRed">ALLERGY CENTER®</span></div>
@@ -2222,21 +1977,6 @@
             <p><i class="fa-solid fa-phone text-sky-400 mr-2"></i><strong>Other Lines:</strong> 7860070827, 7081284120</p>
             <p><i class="fa-solid fa-location-dot text-brandRed mr-2"></i><strong>Address:</strong> In Front of Prakash Hospital, Brahmasthal, Sahadatpur, Mau – 275101 (UP)</p>
           </div>
-
-          <div class="pt-2 flex items-center gap-3">
-            <a href="https://www.facebook.com/profile.php?id=61574112081873&rdid=aAmIZEEZ82eAv5jl&share_url=https://www.facebook.com/share/19gki8yffW#" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center hover:scale-110 transition-all shadow-md" aria-label="Facebook">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="https://share.google/uth4fhpttFP9Xq4Y3" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-amber-500 text-white flex items-center justify-center hover:scale-110 transition-all shadow-md" aria-label="Google Profile">
-              <i class="fa-brands fa-google"></i>
-            </a>
-            <a href="https://wa.me/919412441889" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-emerald-500 text-white flex items-center justify-center hover:scale-110 transition-all shadow-md" aria-label="WhatsApp">
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
-            <a href="https://dainik.bhaskar.com/lvFF1imri3b" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-brandRed text-white flex items-center justify-center hover:scale-110 transition-all shadow-md" aria-label="Dainik Bhaskar Feature">
-              <i class="fa-solid fa-newspaper"></i>
-            </a>
-          </div>
         </div>
 
         <!-- Quick Links -->
@@ -2248,7 +1988,7 @@
             <li><a href="#doctor" class="hover:text-white transition-colors text-cyan-300 font-semibold">Dr. Ajay Mohan</a></li>
             <li><a href="#hydrafacial" class="hover:text-white transition-colors">Hydrafacial & Laser</a></li>
             <li><a href="#equipment" class="hover:text-white transition-colors">Technologies</a></li>
-            <li><a href="#social-feed" class="hover:text-white transition-colors text-blue-400">Facebook Videos</a></li>
+            <li><a href="#social-feed" class="hover:text-white transition-colors text-blue-400">Videos</a></li>
             <li><a href="#pan-india" class="hover:text-white transition-colors">Pan-India Reach</a></li>
             <li><a href="#reviews" class="hover:text-white transition-colors">Google Reviews (4.9 ★)</a></li>
           </ul>
@@ -2283,13 +2023,27 @@
               </span>
               <p class="text-[11px] text-slate-400 mt-1">Dedicated parking available for patients traveling from across UP & Bihar.</p>
             </div>
+            <div class="pt-2 flex items-center gap-3">
+              <a href="https://www.facebook.com/profile.php?id=61574112081873&rdid=aAmIZEEZ82eAv5jl&share_url=https://www.facebook.com/share/19gki8yffW#" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center hover:scale-110 transition-all shadow-md" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="https://share.google/uth4fhpttFP9Xq4Y3" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-amber-500 text-white flex items-center justify-center hover:scale-110 transition-all shadow-md" aria-label="Google Profile">
+                <i class="fa-brands fa-google"></i>
+              </a>
+              <a href="https://wa.me/919412441889" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-emerald-500 text-white flex items-center justify-center hover:scale-110 transition-all shadow-md" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="https://dainik.bhaskar.com/lvFF1imri3b" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-brandRed text-white flex items-center justify-center hover:scale-110 transition-all shadow-md" aria-label="Dainik Bhaskar Feature">
+                <i class="fa-solid fa-newspaper"></i>
+              </a>
+            </div>
           </div>
         </div>
 
       </div>
 
       <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-        <p>&copy; <span id="currentYear"></span> AMS Skin & Allergy Center®. All Rights Reserved.</p>
+        <p>&copy; <span id="currentYear"></span> AMS Skin & Allergy Center® All Rights Reserved.</p>
         <p>In Front of Prakash Hospital, Brahmasthal, Sahadatpur, Mau – 275101 (UP).</p>
       </div>
 
@@ -2393,10 +2147,9 @@
         });
       }
 
-      // Hero Image Slider (Every 2.8s)
+      // Hero Image Slider
       const heroSlides = document.querySelectorAll('.hero-slide');
       let currentHeroSlide = 0;
-
       let heroInterval = null;
 
       function startHeroSlider() {
@@ -2421,7 +2174,7 @@
 
       startHeroSlider();
 
-      // Gallery Slider (NO BOTTOM DOTS AS REQUESTED)
+      // Gallery Slider
       const galleryTrack = document.getElementById('galleryTrack');
       const prevGalleryBtn = document.getElementById('prevGallery');
       const nextGalleryBtn = document.getElementById('nextGallery');
@@ -2460,7 +2213,7 @@
         startGalleryAuto();
       }
 
-      // Interactive Before / After Whitening & Skin Slider
+      // Before / After Comparison Slider
       const rangeInput = document.getElementById("twc-range-input");
       const beforeImage = document.getElementById("twc-before-img");
       const dividerLine = document.getElementById("twc-slider-line");
@@ -2475,7 +2228,7 @@
         updateSlider(rangeInput.value);
       }
 
-      // Testimonials Carousel (Using ALL Real Verified Google Reviews provided in raw data)
+      // Testimonials Carousel
       const reviews = [
         { 
           name: "Prince Yadav", 
@@ -2594,7 +2347,7 @@
 
       startTestimonials();
 
-      // Avoid running carousels while the page is hidden/backgrounded.
+      // Pause animations when tab is blurred
       document.addEventListener('visibilitychange', () => {
         if (document.hidden) {
           stopHeroSlider();

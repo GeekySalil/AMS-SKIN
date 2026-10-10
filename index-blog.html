@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- ================= SEO & META TAGS ================= -->
+  <title>AMS Skin & Allergy Blog | Expert Clinical Guides by Dr. Ajay Mohan | Mau</title>
+  <meta name="description" content="Explore evidence-based dermatology, allergy, laser, and trichology articles written by Gold Medalist Dermatologist Dr. Ajay Mohan (Ex. PGI, Ex. LLRM) at AMS Skin & Allergy Center®, Mau." />
+  <meta name="keywords" content="Dermatology Blog Mau, Skin Care Tips, Laser Hair Removal Guide, Fungal Infection Treatment, Vitiligo Care, Acne Scars Removal, Dr Ajay Mohan Articles, AMS Skin Blog" />
+  <meta name="author" content="Dr. Ajay Mohan | AMS Skin & Allergy Center®" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.amsskincenter.in/blog" />
+
+  <!-- Geo Meta Tags for Mau & Purvanchal SEO -->
+  <meta name="geo.region" content="IN-UP" />
+  <meta name="geo.placename" content="Mau, Uttar Pradesh" />
+  <meta name="geo.position" content="25.926781;83.569747" />
+  <meta name="ICBM" content="25.926781, 83.569747" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/round-logo.png">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="blog" />
+  <meta property="og:site_name" content="AMS Skin & Allergy Center®" />
+  <meta property="og:title" content="AMS Skin & Allergy Blog | Clinical Insights by Dr. Ajay Mohan" />
+  <meta property="og:description" content="Evidence-backed medical articles on skin diseases, allergy eradication, US-FDA laser procedures, and hair restoration." />
+  <meta property="og:image" content="images/20.webp" />
+  <meta property="og:url" content="https://www.amsskincenter.in/index-blog.html" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandBlue: '#0052CC',
+            brandBlueDark: '#07204A',
+            brandBlueLight: '#2684FF',
+            brandRed: '#E11D48',
+            brandRedHover: '#BE123C',
+            brandTeal: '#0D9488',
+            accentIce: '#E0F2FE',
+            darkBase: '#080E1A',
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+            cursive: ['Dancing Script', 'cursive']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Schema.org JSON-LD for Medical Blog -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "AMS Skin & Allergy Center Clinical Blog",
+    "description": "Medical articles and patient guides written by Gold Medalist Dermatologist Dr. Ajay Mohan.",
+    "url": "https://www.amsskincenter.in/blog",
+    "publisher": {
+      "@type": "MedicalClinic",
+      "name": "AMS Skin & Allergy Center®",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.amsskincenter.in/images/round-logo.png"
+      }
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Dr. Ajay Mohan",
+      "jobTitle": "Senior Dermatologist & Laser Surgeon",
+      "honorificSuffix": "M.B.B.S., M.D. (Skin & V.D.) - Gold Medalist"
+    }
+  }
+  </script>
+
+  <style>
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+    }
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(18px);
+    }
+
+    html, body {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #0052CC;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #E11D48;
+    }
+
+    /* Card image zoom effect */
+    .blog-card-img-wrap {
+      overflow: hidden;
+    }
+    .blog-card-img-wrap img {
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .blog-card:hover .blog-card-img-wrap img {
+      transform: scale(1.06);
+    }
+
+    /* Line Clamp */
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .line-clamp-3 {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* Active filter pill */
+    .filter-btn.active {
+      background-color: #0052CC;
+      color: #ffffff;
+      border-color: #0052CC;
+      box-shadow: 0 4px 14px rgba(0, 82, 204, 0.28);
+    }
+
+    /* Sticky Sidebar */
+    .sticky-sidebar {
+      position: sticky;
+      top: 86px;
+    }
+
+    /* Fade-in for search / filter reload */
+    @keyframes cardFadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-cardFade {
+      animation: cardFadeIn 0.4s ease-out forwards;
+    }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased font-sans selection:bg-brandRed selection:text-white">
+
+  <!-- ================= TOP READING PROGRESS BAR ================= -->
+  <div id="scroll-progress" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-brandBlue via-brandTeal to-brandRed z-[100] transition-all duration-150 w-0"></div>
+
+  <!-- ================= 1. STICKY NAVBAR (Matching Homepage) ================= -->
+  <header id="main-nav" class="fixed top-0 left-0 w-full z-[90] transition-all duration-300 glass-nav border-b border-slate-200/80 shadow-sm h-[68px] flex items-center">
+    <div class="w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      
+      <!-- Clinic Brand Logo -->
+      <a href="index.html#home" class="flex items-center gap-2.5 sm:gap-3 group">
+        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full overflow-hidden flex items-center justify-center group-hover:scale-105 transition-transform duration-300 shadow-md shrink-0 bg-white">
+          <img 
+            src="images/round-logo.png" 
+            alt="AMS Skin & Allergy Center Logo"
+            class="w-full h-full object-cover"
+            width="44"
+            height="44"
+            decoding="async"
+          >
+        </div>
+        <div>
+          <div class="text-base sm:text-lg lg:text-xl font-black tracking-tight leading-none text-slate-900">
+            AMS SKIN & <span class="text-brandRed">ALLERGY CENTER®</span>
+          </div>
+          <p class="text-[8px] sm:text-[11px] tracking-wider text-slate-500 font-extrabold uppercase mt-0.5">
+            Dr. Ajay Mohan • M.D. (Skin & V.D.)
+          </p>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden xl:flex items-center gap-5 2xl:gap-6 font-extrabold text-sm 2xl:text-sm text-slate-700">
+        <a href="index.html#home" class="hover:text-brandBlue transition-colors py-1">HOME</a>
+        <a href="index.html#about" class="hover:text-brandBlue transition-colors py-1">ABOUT</a>
+        <a href="index.html#services" class="hover:text-brandBlue transition-colors py-1">TREATMENTS</a>
+        <a href="index.html#hydrafacial" class="hover:text-brandBlue text-brandTeal font-extrabold transition-colors py-1 flex items-center gap-1">
+          <span>HYDRAFACIAL & LASER</span>
+          <i class="fa-solid fa-wand-magic-sparkles text-[10px]"></i>
+        </a>
+        <a href="index.html#gallery" class="hover:text-brandBlue transition-colors py-1">GALLERY</a>
+        <a href="index-blog.html" class="text-brandRed relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-brandRed transition-all">BLOGS</a>
+        <a href="index.html#reviews" class="hover:text-brandBlue transition-colors py-1">TESTIMONIALS</a>
+        <a href="index.html#contact" class="hover:text-brandBlue transition-colors py-1">CONTACT US</a>
+      </nav>
+
+      <!-- Right Action Button -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="#booking" class="flex items-center gap-2 bg-brandRed hover:bg-brandRedHover text-white px-4 py-2 rounded-full font-bold text-xs sm:text-sm shadow-md shadow-brandRed/20 hover:scale-[1.02] active:scale-95 transition-all">
+          <i class="fa-regular fa-calendar-check text-xs"></i>
+          <span>Book Consultation</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button id="mobile-toggle" class="xl:hidden text-slate-700 focus:outline-none p-2" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden xl:hidden fixed top-[68px] left-0 w-full bg-white border-b border-slate-200 px-6 py-4 shadow-2xl space-y-3 z-[89]">
+      <a href="index.html#home" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlue">HOME</a>
+      <a href="index.html#about" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlue">ABOUT</a>
+      <a href="index.html#services" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlue">TREATMENTS</a>
+      <a href="index.html#hydrafacial" class="mobile-nav-link block font-bold text-brandTeal hover:text-brandBlue">HYDRAFACIAL & LASER TECH</a>
+      <a href="index.html#gallery" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlue">GALLERY</a>
+      <a href="index-blog.html" class="mobile-nav-link block font-bold text-brandRed">BLOGS</a>
+      <a href="index.html#reviews" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlue">TESTIMONIALS</a>
+      <a href="index.html#contact" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlue">CONTACT US</a>
+      <div class="pt-2">
+        <a href="#booking" class="mobile-nav-link flex items-center justify-center gap-2 w-full bg-brandRed text-white py-2.5 rounded-full font-bold text-sm shadow-md">
+          <i class="fa-regular fa-calendar-check"></i> Book Appointment
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= 2. HERO / SEARCH HEADER ================= -->
+  <section class="pt-28 pb-16 lg:pt-36 lg:pb-24 relative overflow-hidden bg-[radial-gradient(circle_at_15%_20%,rgba(0,82,204,0.08),transparent_40%),radial-gradient(circle_at_85%_30%,rgba(225,29,72,0.08),transparent_35%),linear-gradient(135deg,#ffffff_0%,#f0f7ff_50%,#f8fafc_100%)] border-b border-sky-100">
+    
+    <!-- Background Grid Pattern -->
+    <div class="absolute inset-0 pointer-events-none opacity-[0.25] bg-[linear-gradient(rgba(0,82,204,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(0,82,204,0.04)_1px,transparent_1px)] bg-[size:36px_36px]"></div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center reveal">
+      
+      <!-- Breadcrumb -->
+      <nav class="flex justify-center text-xs text-slate-500 mb-5 font-bold tracking-wide uppercase" aria-label="Breadcrumb">
+        <ol class="inline-flex items-center space-x-2">
+          <li><a href="index.html" class="hover:text-brandBlue transition-colors">Home</a></li>
+          <li><i class="fa-solid fa-chevron-right text-[10px] text-slate-400"></i></li>
+          <li class="text-brandRed" aria-current="page">Clinical Dermatology Blog</li>
+        </ol>
+      </nav>
+
+      <!-- Trust Badges -->
+      <div class="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-300 text-emerald-800 px-3.5 py-1 rounded-full text-xs font-black uppercase tracking-wider mb-4 shadow-sm">
+        <i class="fa-solid fa-user-doctor text-emerald-600"></i>
+        <span>Clinical Knowledge Hub • Dr. Ajay Mohan</span>
+      </div>
+
+      <!-- Hero Heading -->
+      <h1 class="tracking-tight text-slate-900 mb-4">
+        <span class="font-cursive text-brandBlue text-5xl sm:text-6xl lg:text-7xl font-bold block leading-[1.1]">
+          Evidence-Based Dermatology &<span class="font-cursive text-brandRed">
+          Skin Health <span class="text-brandRed">Blog</span>
+        </span>
+        </span>
+       
+      </h1>
+
+      <p class="text-slate-600 max-w-2xl mx-auto text-xs sm:text-sm lg:text-base leading-relaxed mb-8 font-medium">
+        Explore clinical guides, laser breakthroughs, allergy root-cause solutions, and trichology advice written by <strong>AMS Skin & Allergy Center®</strong> under guidance of <br><strong>Dr. Ajay Mohan (M.D. - Skin & V.D.)</strong>.
+      </p>
+
+      <!-- Interactive Search Bar -->
+      <div class="max-w-2xl mx-auto relative group shadow-xl rounded-full">
+        <div class="absolute inset-y-0 left-0 pl-5 flex items-center pointer-events-none text-brandBlue">
+          <i class="fa-solid fa-magnifying-glass text-lg"></i>
+        </div>
+        <input 
+          type="text" 
+          id="blog-search" 
+          class="block w-full pl-12 pr-28 py-4 bg-white/95 border-2 border-sky-100 rounded-full text-slate-800 placeholder-slate-400 text-sm focus:outline-none focus:border-brandBlue focus:ring-4 focus:ring-brandBlue/10 transition-all font-semibold" 
+          placeholder="Search acne scars, ringworm, hydrafacial, hair fall..."
+        />
+        <button 
+          id="search-btn" 
+          class="absolute inset-y-1.5 right-1.5 bg-brandBlue hover:bg-brandBlueDark text-white px-5 sm:px-6 rounded-full font-bold text-xs sm:text-sm transition-all shadow-md flex items-center gap-1.5">
+          <span>Search</span>
+        </button>
+      </div>
+
+      <!-- Quick Search Tag Pills -->
+      <div class="mt-6 flex flex-wrap justify-center items-center gap-2 text-xs">
+        <span class="text-slate-500 font-bold mr-1">Frequent Topics:</span>
+        <button class="tag-filter px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700 hover:border-brandBlue hover:text-brandBlue font-semibold transition-all shadow-sm" data-tag="allergy">Allergy Care</button>
+        <button class="tag-filter px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700 hover:border-brandBlue hover:text-brandBlue font-semibold transition-all shadow-sm" data-tag="laser-surgery">Laser Hair Removal</button>
+        <button class="tag-filter px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700 hover:border-brandBlue hover:text-brandBlue font-semibold transition-all shadow-sm" data-tag="clinical-derma">Fungal Infection</button>
+        <button class="tag-filter px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700 hover:border-brandBlue hover:text-brandBlue font-semibold transition-all shadow-sm" data-tag="pigmentation-vitiligo">Vitiligo</button>
+        <button class="tag-filter px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700 hover:border-brandBlue hover:text-brandBlue font-semibold transition-all shadow-sm" data-tag="hair-trichology">Hair Transplant</button>
+        <button class="tag-filter px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700 hover:border-brandBlue hover:text-brandBlue font-semibold transition-all shadow-sm" data-tag="hydrafacial-glow">Hydrafacial</button>
+      </div>
+
+    </div>
+  </section>
+
+  
+
+  <!-- ================= 4. MAIN BLOG ARTICLES GRID + STICKY SIDEBAR ================= -->
+  <section id="main-content" class="py-16 bg-slate-50 relative">
+    <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10">
+        
+        <!-- ================= LEFT: BLOG FEED (9 Columns) ================= -->
+        <div class="lg:col-span-8 xl:col-span-9">
+          
+          <!-- Category Filter Bar (Scrollable on Mobile) -->
+          <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 scrollbar-none border-b border-slate-200">
+            <button class="filter-btn active px-4 py-2 rounded-full text-xs font-extrabold whitespace-nowrap border border-slate-300 transition-all bg-white text-slate-700" data-filter="all">All Topics (26)</button>
+            <button class="filter-btn px-4 py-2 rounded-full text-xs font-extrabold whitespace-nowrap border border-slate-300 transition-all bg-white text-slate-700" data-filter="clinical-derma">Clinical Derma</button>
+            <button class="filter-btn px-4 py-2 rounded-full text-xs font-extrabold whitespace-nowrap border border-slate-300 transition-all bg-white text-slate-700" data-filter="allergy">Allergies</button>
+            <button class="filter-btn px-4 py-2 rounded-full text-xs font-extrabold whitespace-nowrap border border-slate-300 transition-all bg-white text-slate-700" data-filter="acne-scars">Acne & Scars</button>
+            <button class="filter-btn px-4 py-2 rounded-full text-xs font-extrabold whitespace-nowrap border border-slate-300 transition-all bg-white text-slate-700" data-filter="pigmentation-vitiligo">Pigmentation & Vitiligo</button>
+            <button class="filter-btn px-4 py-2 rounded-full text-xs font-extrabold whitespace-nowrap border border-slate-300 transition-all bg-white text-slate-700" data-filter="laser-surgery">Laser & Warts</button>
+            <button class="filter-btn px-4 py-2 rounded-full text-xs font-extrabold whitespace-nowrap border border-slate-300 transition-all bg-white text-slate-700" data-filter="hair-trichology">Hair & Transplant</button>
+            <button class="filter-btn px-4 py-2 rounded-full text-xs font-extrabold whitespace-nowrap border border-slate-300 transition-all bg-white text-slate-700" data-filter="hydrafacial-glow">Hydrafacial</button>
+            <button class="filter-btn px-4 py-2 rounded-full text-xs font-extrabold whitespace-nowrap border border-slate-300 transition-all bg-white text-slate-700" data-filter="nail-care">Nails</button>
+            <button class="filter-btn px-4 py-2 rounded-full text-xs font-extrabold whitespace-nowrap border border-slate-300 transition-all bg-white text-slate-700" data-filter="miscellaneous">Everyday Guidance</button>
+          </div>
+
+          <!-- No Search Results Found Alert -->
+          <div id="no-results" class="hidden glass-card rounded-3xl p-12 text-center border border-slate-200">
+            <div class="w-16 h-16 bg-red-100 text-brandRed rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <h3 class="text-xl font-black text-slate-900 mb-2">No Matching Clinical Guides Found</h3>
+            <p class="text-slate-600 text-sm max-w-md mx-auto">Try typing another symptom or reset your filter to view all dermatology articles.</p>
+            <button onclick="window.resetBlogFilters()" class="mt-5 inline-flex items-center gap-2 bg-brandBlue text-white px-5 py-2.5 rounded-full text-xs font-bold hover:bg-brandBlueDark transition-all">
+              <i class="fa-solid fa-rotate-left"></i> Reset Filter
+            </button>
+          </div>
+
+          <!-- All Categorized Blog Articles Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6" id="blog-grid">
+            
+            <!-- 1. CLINICAL DERMATOLOGY -->
+            <article class="blog-card glass-card rounded-2xl overflow-hidden border border-slate-200/90 hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="clinical-derma">
+              <div class="relative h-48 blog-card-img-wrap bg-slate-900">
+                <img src="images/4.webp" alt="Fungal Infection Treatment" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <span class="absolute top-3 left-3 bg-brandBlue text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-md">Clinical Derma</span>
+              </div>
+              <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center text-[11px] text-slate-400 mb-2 gap-3 font-semibold">
+                  <span><i class="fa-regular fa-clock text-brandRed mr-1"></i>7 Min Read</span>
+                  <span><i class="fa-solid fa-award text-amber-500 mr-1"></i>PGI Protocol</span>
+                </div>
+                <h3 class="font-black text-slate-900 text-base leading-snug mb-2 group-hover:text-brandBlue transition-colors">
+                  <a href="fungal-infection-treatment.html">Permanent Cure for Chronic Daad & Ringworm: Stopping OTC Steroid Relapse</a>
+                </h3>
+                <p class="text-slate-600 text-xs leading-relaxed line-clamp-3 mb-4">
+                  Learn why commercial triple-combination creams cause resistant fungal infections and how systematic dermatological therapy completely resolves tinea infections.
+                </p>
+                <div class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                  <span class="font-bold text-slate-700">Dr. Ajay Mohan</span>
+                  <a href="fungal-infection-treatment.html" class="text-brandBlue font-black hover:underline flex items-center gap-1">Read Guide <i class="fa-solid fa-chevron-right text-[9px]"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card glass-card rounded-2xl overflow-hidden border border-slate-200/90 hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="clinical-derma">
+              <div class="relative h-48 blog-card-img-wrap bg-slate-900">
+                <img src="images/20.webp" alt="Eczema and Dermatitis" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <span class="absolute top-3 left-3 bg-brandBlue text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-md">Clinical Derma</span>
+              </div>
+              <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center text-[11px] text-slate-400 mb-2 gap-3 font-semibold">
+                  <span><i class="fa-regular fa-clock text-brandRed mr-1"></i>6 Min Read</span>
+                  <span><i class="fa-solid fa-shield text-brandBlue mr-1"></i>Barrier Care</span>
+                </div>
+                <h3 class="font-black text-slate-900 text-base leading-snug mb-2 group-hover:text-brandBlue transition-colors">
+                  <a href="eczema-atopic-dermatitis.html">Understanding Eczema & Atopic Dermatitis: Ceramide Repair & Itch Relief</a>
+                </h3>
+                <p class="text-slate-600 text-xs leading-relaxed line-clamp-3 mb-4">
+                  A comprehensive patient guide to identifying eczema flare triggers, restoring the compromised stratum corneum, and safe long-term non-steroidal treatments.
+                </p>
+                <div class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                  <span class="font-bold text-slate-700">Dr. Ajay Mohan</span>
+                  <a href="eczema-atopic-dermatitis.html" class="text-brandBlue font-black hover:underline flex items-center gap-1">Read Guide <i class="fa-solid fa-chevron-right text-[9px]"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card glass-card rounded-2xl overflow-hidden border border-slate-200/90 hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="clinical-derma">
+              <div class="relative h-48 blog-card-img-wrap bg-slate-900">
+                <img src="images/8.webp" alt="Video Dermascopy" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <span class="absolute top-3 left-3 bg-brandBlue text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-md">Clinical Derma</span>
+              </div>
+              <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center text-[11px] text-slate-400 mb-2 gap-3 font-semibold">
+                  <span><i class="fa-regular fa-clock text-brandRed mr-1"></i>5 Min Read</span>
+                  <span><i class="fa-solid fa-microscope text-brandTeal mr-1"></i>Diagnostics</span>
+                </div>
+                <h3 class="font-black text-slate-900 text-base leading-snug mb-2 group-hover:text-brandBlue transition-colors">
+                  <a href="video-dermascopy-importance.html">Why High-Resolution Video Dermascopy Is Essential for Skin Diagnostics</a>
+                </h3>
+                <p class="text-slate-600 text-xs leading-relaxed line-clamp-3 mb-4">
+                  Discover how high-magnification polarized dermascopy evaluates cellular pigmentation, hair follicle root health, and atypical mole structures painlessly.
+                </p>
+                <div class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                  <span class="font-bold text-slate-700">Dr. Ajay Mohan</span>
+                  <a href="video-dermascopy-importance.html" class="text-brandBlue font-black hover:underline flex items-center gap-1">Read Guide <i class="fa-solid fa-chevron-right text-[9px]"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 2. ALLERGY THERAPEUTICS -->
+            <article class="blog-card glass-card rounded-2xl overflow-hidden border border-slate-200/90 hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="allergy">
+              <div class="relative h-48 blog-card-img-wrap bg-slate-900">
+                <img src="images/14.webp" alt="Urticaria and Hives" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <span class="absolute top-3 left-3 bg-brandRed text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-md">Allergy</span>
+              </div>
+              <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center text-[11px] text-slate-400 mb-2 gap-3 font-semibold">
+                  <span><i class="fa-regular fa-clock text-brandRed mr-1"></i>8 Min Read</span>
+                  <span><i class="fa-solid fa-shield-virus text-brandRed mr-1"></i>Immune Care</span>
+                </div>
+                <h3 class="font-black text-slate-900 text-base leading-snug mb-2 group-hover:text-brandRed transition-colors">
+                  <a href="chronic-urticaria-hives.html">Chronic Urticaria & Sudden Hives: Eradicating the Root Immune Trigger</a>
+                </h3>
+                <p class="text-slate-600 text-xs leading-relaxed line-clamp-3 mb-4">
+                  Why antihistamines only suppress symptoms temporarily. How Dr. Ajay Mohan identifies allergy antigens and achieves long-lasting remission for severe hives.
+                </p>
+                <div class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                  <span class="font-bold text-slate-700">Dr. Ajay Mohan</span>
+                  <a href="chronic-urticaria-hives.html" class="text-brandRed font-black hover:underline flex items-center gap-1">Read Guide <i class="fa-solid fa-chevron-right text-[9px]"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card glass-card rounded-2xl overflow-hidden border border-slate-200/90 hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="allergy">
+              <div class="relative h-48 blog-card-img-wrap bg-slate-900">
+                <img src="images/21.webp" alt="Contact Dermatitis" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <span class="absolute top-3 left-3 bg-brandRed text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-md">Allergy</span>
+              </div>
+              <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center text-[11px] text-slate-400 mb-2 gap-3 font-semibold">
+                  <span><i class="fa-regular fa-clock text-brandRed mr-1"></i>6 Min Read</span>
+                  <span><i class="fa-solid fa-flask text-brandBlue mr-1"></i>Chemical Triggers</span>
+                </div>
+                <h3 class="font-black text-slate-900 text-base leading-snug mb-2 group-hover:text-brandRed transition-colors">
+                  <a href="contact-dermatitis-skin-allergies.html">Contact Dermatitis Demystified: Hair Dyes, Nickel, and Cosmetic Irritants</a>
+                </h3>
+                <p class="text-slate-600 text-xs leading-relaxed line-clamp-3 mb-4">
+                  Recognizing delayed-type hypersensitivity reactions caused by PPD in hair dye, artificial jewelry, cement, and fragranced soaps.
+                </p>
+                <div class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                  <span class="font-bold text-slate-700">Dr. Ajay Mohan</span>
+                  <a href="contact-dermatitis-skin-allergies.html" class="text-brandRed font-black hover:underline flex items-center gap-1">Read Guide <i class="fa-solid fa-chevron-right text-[9px]"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card glass-card rounded-2xl overflow-hidden border border-slate-200/90 hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="allergy">
+              <div class="relative h-48 blog-card-img-wrap bg-slate-900">
+                <img src="images/2.webp" alt="Seasonal Allergies in Purvanchal" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <span class="absolute top-3 left-3 bg-brandRed text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-md">Allergy</span>
+              </div>
+              <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center text-[11px] text-slate-400 mb-2 gap-3 font-semibold">
+                  <span><i class="fa-regular fa-clock text-brandRed mr-1"></i>5 Min Read</span>
+                  <span><i class="fa-solid fa-wind text-cyan-600 mr-1"></i>Weather Shifts</span>
+                </div>
+                <h3 class="font-black text-slate-900 text-base leading-snug mb-2 group-hover:text-brandRed transition-colors">
+                  <a href="seasonal-skin-allergies.html">Managing Seasonal Pruritus & Itchy Rashes Across Purvanchal & Eastern UP</a>
+                </h3>
+                <p class="text-slate-600 text-xs leading-relaxed line-clamp-3 mb-4">
+                  How high humidity and agricultural dust in Mau, Ballia, and Azamgarh trigger recurrent allergic flare-ups and the steps to protect your skin.
+                </p>
+                <div class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                  <span class="font-bold text-slate-700">Dr. Ajay Mohan</span>
+                  <a href="seasonal-skin-allergies.html" class="text-brandRed font-black hover:underline flex items-center gap-1">Read Guide <i class="fa-solid fa-chevron-right text-[9px]"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 3. ACNE & SCARS -->
+            <article class="blog-card glass-card rounded-2xl overflow-hidden border border-slate-200/90 hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="acne-scars">
+              <div class="relative h-48 blog-card-img-wrap bg-slate-900">
+                <img src="images/t1.webp" alt="Acne Treatment Mau" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <span class="absolute top-3 left-3 bg-brandBlue text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-md">Acne & Scars</span>
+              </div>
+              <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center text-[11px] text-slate-400 mb-2 gap-3 font-semibold">
+                  <span><i class="fa-regular fa-clock text-brandRed mr-1"></i>7 Min Read</span>
+                  <span><i class="fa-solid fa-sparkles text-amber-500 mr-1"></i>Acne Protocol</span>
+                </div>
+                <h3 class="font-black text-slate-900 text-base leading-snug mb-2 group-hover:text-brandBlue transition-colors">
+                  <a href="complete-acne-breakout-guide.html">Hormonal vs Bacterial Acne: Dermatologist-Proven Solutions for Clear Skin</a>
+                </h3>
+                <p class="text-slate-600 text-xs leading-relaxed line-clamp-3 mb-4">
+                  An insightful guide covering sebum regulation, comedonal extraction, medical oral retinoids, and dietary triggers behind stubborn adult pimples.
+                </p>
+                <div class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                  <span class="font-bold text-slate-700">Dr. Ajay Mohan</span>
+                  <a href="complete-acne-breakout-guide.html" class="text-brandBlue font-black hover:underline flex items-center gap-1">Read Guide <i class="fa-solid fa-chevron-right text-[9px]"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card glass-card rounded-2xl overflow-hidden border border-slate-200/90 hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="acne-scars">
+              <div class="relative h-48 blog-card-img-wrap bg-slate-900">
+                <img src="images/t2.webp" alt="Acne Scar Resurfacing" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <span class="absolute top-3 left-3 bg-brandBlue text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-md">Acne & Scars</span>
+              </div>
+              <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center text-[11px] text-slate-400 mb-2 gap-3 font-semibold">
+                  <span><i class="fa-regular fa-clock text-brandRed mr-1"></i>9 Min Read</span>
+                  <span><i class="fa-solid fa-wand-magic-sparkles text-brandTeal mr-1"></i>Laser Scar Care</span>
+                </div>
+                <h3 class="font-black text-slate-900 text-base leading-snug mb-2 group-hover:text-brandBlue transition-colors">
+                  <a href="acne-scar-removal-treatments.html">Erasing Deep Pitted Acne Scars: Subcision, Chemical Peels & Lasers</a>
+                </h3>
+                <p class="text-slate-600 text-xs leading-relaxed line-clamp-3 mb-4">
+                  Step-by-step breakdown on treating icepick, boxcar, and rolling scars using multi-modality subcision and dermal collagen induction.
+                </p>
+                <div class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                  <span class="font-bold text-slate-700">Dr. Ajay Mohan</span>
+                  <a href="acne-scar-removal-treatments.html" class="text-brandBlue font-black hover:underline flex items-center gap-1">Read Guide <i class="fa-solid fa-chevron-right text-[9px]"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card glass-card rounded-2xl overflow-hidden border border-slate-200/90 hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="acne-scars">
+              <div class="relative h-48 blog-card-img-wrap bg-slate-900">
+                <img src="images/16.webp" alt="Chemical Peeling AHA BHA" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <span class="absolute top-3 left-3 bg-brandBlue text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-md">Acne & Scars</span>
+              </div>
+              <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center text-[11px] text-slate-400 mb-2 gap-3 font-semibold">
+                  <span><i class="fa-regular fa-clock text-brandRed mr-1"></i>6 Min Read</span>
+                  <span><i class="fa-solid fa-flask text-emerald-600 mr-1"></i>Medi-Peels</span>
+                </div>
+                <h3 class="font-black text-slate-900 text-base leading-snug mb-2 group-hover:text-brandBlue transition-colors">
+                  <a href="chemical-peeling-for-acne.html">Chemical Peeling Protocols: Glycolic, Salicylic & Yellow Peels Explained</a>
+                </h3>
+                <p class="text-slate-600 text-xs leading-relaxed line-clamp-3 mb-4">
+                  How medical-grade exfoliating acids remove hyperkeratinization, clear congested pores, and restore radiant skin without causing scarring.
+                </p>
+                <div class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                  <span class="font-bold text-slate-700">Dr. Ajay Mohan</span>
+                  <a href="chemical-peeling-for-acne.html" class="text-brandBlue font-black hover:underline flex items-center gap-1">Read Guide <i class="fa-solid fa-chevron-right text-[9px]"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 4. PIGMENTATION & VITILIGO -->
+            <article class="blog-card glass-card rounded-2xl overflow-hidden border border-slate-200/90 hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="pigmentation-vitiligo">
+              <div class="relative h-48 blog-card-img-wrap bg-slate-900">
+                <img src="images/18.webp" alt="Melasma and Hyperpigmentation" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <span class="absolute top-3 left-3 bg-brandRed text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-md">Pigmentation</span>
+              </div>
+              <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center text-[11px] text-slate-400 mb-2 gap-3 font-semibold">
+                  <span><i class="fa-regular fa-clock text-brandRed mr-1"></i>8 Min Read</span>
+                  <span><i class="fa-solid fa-sun text-amber-500 mr-1"></i>Melanin Control</span>
+                </div>
+                <h3 class="font-black text-slate-900 text-base leading-snug mb-2 group-hover:text-brandRed transition-colors">
+                  <a href="melasma-pigmentation-treatment.html">Overcoming Melasma & Pigment Patches: Safe & Long-Term Solutions</a>
+                </h3>
+                <p class="text-slate-600 text-xs leading-relaxed line-clamp-3 mb-4">
+                  Why UV rays, blue light, and hormonal fluctuations trigger stubborn butterfly facial pigmentation and how to clear melasma safely.
+                </p>
+                <div class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                  <span class="font-bold text-slate-700">Dr. Ajay Mohan</span>
+                  <a href="melasma-pigmentation-treatment.html" class="text-brandRed font-black hover:underline flex items-center gap-1">Read Guide <i class="fa-solid fa-chevron-right text-[9px]"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card glass-card rounded-2xl overflow-hidden border border-slate-200/90 hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="pigmentation-vitiligo">
+              <div class="relative h-48 blog-card-img-wrap bg-slate-900">
+                <img src="images/19.webp" alt="Vitiligo Treatment Mau" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <span class="absolute top-3 left-3 bg-brandRed text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-md">Vitiligo</span>
+              </div>
+              <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center text-[11px] text-slate-400 mb-2 gap-3 font-semibold">
+                  <span><i class="fa-regular fa-clock text-brandRed mr-1"></i>10 Min Read</span>
+                  <span><i class="fa-solid fa-circle-check text-emerald-600 mr-1"></i>Autoimmune Focus</span>
+                </div>
+                <h3 class="font-black text-slate-900 text-base leading-snug mb-2 group-hover:text-brandRed transition-colors">
+                  <a href="vitiligo-white-patches-guide.html">Vitiligo (Leukoderma) Demystified: Patches, Stability & Repigmentation</a>
+                </h3>
+                <p class="text-slate-600 text-xs leading-relaxed line-clamp-3 mb-4">
+                  Dispelling societal myths around white patches: understanding melanocyte autoimmunity, medical phototherapy, and surgical melanocyte grafting.
+                </p>
+                <div class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                  <span class="font-bold text-slate-700">Dr. Ajay Mohan</span>
+                  <a href="vitiligo-white-patches-guide.html" class="text-brandRed font-black hover:underline flex items-center gap-1">Read Guide <i class="fa-solid fa-chevron-right text-[9px]"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card glass-card rounded-2xl overflow-hidden border border-slate-200/90 hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="pigmentation-vitiligo">
+              <div class="relative h-48 blog-card-img-wrap bg-slate-900">
+                <img src="images/10.webp" alt="Safe Skin Brightening" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <span class="absolute top-3 left-3 bg-brandRed text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-md">Pigmentation</span>
+              </div>
+              <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center text-[11px] text-slate-400 mb-2 gap-3 font-semibold">
+                  <span><i class="fa-regular fa-clock text-brandRed mr-1"></i>6 Min Read</span>
+                  <span><i class="fa-solid fa-shield text-brandBlue mr-1"></i>Safe Care</span>
+                </div>
+                <h3 class="font-black text-slate-900 text-base leading-snug mb-2 group-hover:text-brandRed transition-colors">
+                  <a href="skin-brightening-pigmentation.html">Medical Skin Brightening vs Dangerous Whitening Bleaches: Dermatologist Insights</a>
+                </h3>
+                <p class="text-slate-600 text-xs leading-relaxed line-clamp-3 mb-4">
+                  Learn how Kojic acid, Tranexamic acid, and Glutathione regulate tyrosinase safely without destroying natural skin resilience.
+                </p>
+                <div class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                  <span class="font-bold text-slate-700">Dr. Ajay Mohan</span>
+                  <a href="skin-brightening-pigmentation.html" class="text-brandRed font-black hover:underline flex items-center gap-1">Read Guide <i class="fa-solid fa-chevron-right text-[9px]"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 5. LASER SURGERY & TATTOO REMOVAL -->
+            <article class="blog-card glass-card rounded-2xl overflow-hidden border border-slate-200/90 hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="laser-surgery">
+              <div class="relative h-48 blog-card-img-wrap bg-slate-900">
+                <img src="images/laser.png" alt="Laser Hair Removal Mau" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <span class="absolute top-3 left-3 bg-brandBlue text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-md">Laser Surgery</span>
+              </div>
+              <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center text-[11px] text-slate-400 mb-2 gap-3 font-semibold">
+                  <span><i class="fa-regular fa-clock text-brandRed mr-1"></i>8 Min Read</span>
+                  <span><i class="fa-solid fa-bolt text-cyan-500 mr-1"></i>US-FDA Lasers</span>
+                </div>
+                <h3 class="font-black text-slate-900 text-base leading-snug mb-2 group-hover:text-brandBlue transition-colors">
+                  <a href="laser-hair-removal-mau.html">Permanent Laser Hair Removal for Indian Skin: Sessions, Pain & Science</a>
+                </h3>
+                <p class="text-slate-600 text-xs leading-relaxed line-clamp-3 mb-4">
+                  Everything you should know about triple-wavelength medical lasers targeting anagen hair follicles safely with zero downtime.
+                </p>
+                <div class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                  <span class="font-bold text-slate-700">Dr. Ajay Mohan</span>
+                  <a href="laser-hair-removal-mau.html" class="text-brandBlue font-black hover:underline flex items-center gap-1">Read Guide <i class="fa-solid fa-chevron-right text-[9px]"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card glass-card rounded-2xl overflow-hidden border border-slate-200/90 hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="laser-surgery">
+              <div class="relative h-48 blog-card-img-wrap bg-slate-900">
+                <img src="images/5.webp" alt="Laser Tattoo Removal" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <span class="absolute top-3 left-3 bg-brandBlue text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-md">Laser Surgery</span>
+              </div>
+              <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center text-[11px] text-slate-400 mb-2 gap-3 font-semibold">
+                  <span><i class="fa-regular fa-clock text-brandRed mr-1"></i>7 Min Read</span>
+                  <span><i class="fa-solid fa-wand-magic-sparkles text-brandBlue mr-1"></i>Q-Switched Laser</span>
+                </div>
+                <h3 class="font-black text-slate-900 text-base leading-snug mb-2 group-hover:text-brandBlue transition-colors">
+                  <a href="q-switched-laser-tattoo-removal.html">Advanced Q-Switched Nd:YAG Laser Tattoo Removal: Ink Shattering Explained</a>
+                </h3>
+                <p class="text-slate-600 text-xs leading-relaxed line-clamp-3 mb-4">
+                  How high-intensity nanosecond acoustic pulses shatter exogenous ink pigments into microscopic particles cleared naturally by macrophages.
+                </p>
+                <div class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                  <span class="font-bold text-slate-700">Dr. Ajay Mohan</span>
+                  <a href="q-switched-laser-tattoo-removal.html" class="text-brandBlue font-black hover:underline flex items-center gap-1">Read Guide <i class="fa-solid fa-chevron-right text-[9px]"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card glass-card rounded-2xl overflow-hidden border border-slate-200/90 hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="laser-surgery">
+              <div class="relative h-48 blog-card-img-wrap bg-slate-900">
+                <img src="images/9.webp" alt="Radio Cautery Warts Tags" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <span class="absolute top-3 left-3 bg-brandBlue text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-md">Laser Surgery</span>
+              </div>
+              <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center text-[11px] text-slate-400 mb-2 gap-3 font-semibold">
+                  <span><i class="fa-regular fa-clock text-brandRed mr-1"></i>5 Min Read</span>
+                  <span><i class="fa-solid fa-bolt text-amber-500 mr-1"></i>Radio Cautery</span>
+                </div>
+                <h3 class="font-black text-slate-900 text-base leading-snug mb-2 group-hover:text-brandBlue transition-colors">
+                  <a href="radio-cautery-warts-moles.html">Scarless Removal of Warts, Skin Tags & Moles via Radiofrequency Cautery</a>
+                </h3>
+                <p class="text-slate-600 text-xs leading-relaxed line-clamp-3 mb-4">
+                  Low-temperature radio cautery enables stitchless, bloodless elimination of benign cutaneous growths in single minor procedures.
+                </p>
+                <div class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                  <span class="font-bold text-slate-700">Dr. Ajay Mohan</span>
+                  <a href="radio-cautery-warts-moles.html" class="text-brandBlue font-black hover:underline flex items-center gap-1">Read Guide <i class="fa-solid fa-chevron-right text-[9px]"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 6. HAIR RESTORATION & TRICHOLOGY -->
+            <article class="blog-card glass-card rounded-2xl overflow-hidden border border-slate-200/90 hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="hair-trichology">
+              <div class="relative h-48 blog-card-img-wrap bg-slate-900">
+                <img src="images/11.webp" alt="Hair Loss Solutions" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <span class="absolute top-3 left-3 bg-brandRed text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-md">Trichology</span>
+              </div>
+              <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center text-[11px] text-slate-400 mb-2 gap-3 font-semibold">
+                  <span><i class="fa-regular fa-clock text-brandRed mr-1"></i>7 Min Read</span>
+                  <span><i class="fa-solid fa-microscope text-brandBlue mr-1"></i>Scalp Science</span>
+                </div>
+                <h3 class="font-black text-slate-900 text-base leading-snug mb-2 group-hover:text-brandRed transition-colors">
+                  <a href="hair-loss-causes-and-treatments.html">Telogen Effluvium vs Pattern Baldness: Stopping Severe Hair Shedding</a>
+                </h3>
+                <p class="text-slate-600 text-xs leading-relaxed line-clamp-3 mb-4">
+                  How stress, nutritional deficiencies, and DHT hormones shrink hair follicles and how trichological dermascopy identifies the root problem.
+                </p>
+                <div class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                  <span class="font-bold text-slate-700">Dr. Ajay Mohan</span>
+                  <a href="hair-loss-causes-and-treatments.html" class="text-brandRed font-black hover:underline flex items-center gap-1">Read Guide <i class="fa-solid fa-chevron-right text-[9px]"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card glass-card rounded-2xl overflow-hidden border border-slate-200/90 hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="hair-trichology">
+              <div class="relative h-48 blog-card-img-wrap bg-slate-900">
+                <img src="images/7.webp" alt="FUE Hair Transplant Mau" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <span class="absolute top-3 left-3 bg-brandRed text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-md">Hair Transplant</span>
+              </div>
+              <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center text-[11px] text-slate-400 mb-2 gap-3 font-semibold">
+                  <span><i class="fa-regular fa-clock text-brandRed mr-1"></i>11 Min Read</span>
+                  <span><i class="fa-solid fa-scissors text-brandRed mr-1"></i>Dermatosurgery</span>
+                </div>
+                <h3 class="font-black text-slate-900 text-base leading-snug mb-2 group-hover:text-brandRed transition-colors">
+                  <a href="hair-transplant-surgery-guide.html">Follicular Unit Extraction (FUE) Hair Transplant: The Complete Patient Guide</a>
+                </h3>
+                <p class="text-slate-600 text-xs leading-relaxed line-clamp-3 mb-4">
+                  From graft harvesting and hairline design to post-operative recovery: everything you should know before undergoing surgical hair restoration.
+                </p>
+                <div class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                  <span class="font-bold text-slate-700">Dr. Ajay Mohan</span>
+                  <a href="hair-transplant-surgery-guide.html" class="text-brandRed font-black hover:underline flex items-center gap-1">Read Guide <i class="fa-solid fa-chevron-right text-[9px]"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card glass-card rounded-2xl overflow-hidden border border-slate-200/90 hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="hair-trichology">
+              <div class="relative h-48 blog-card-img-wrap bg-slate-900">
+                <img src="images/12.webp" alt="PRP and GFC Therapy" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <span class="absolute top-3 left-3 bg-brandRed text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-md">Trichology</span>
+              </div>
+              <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center text-[11px] text-slate-400 mb-2 gap-3 font-semibold">
+                  <span><i class="fa-regular fa-clock text-brandRed mr-1"></i>6 Min Read</span>
+                  <span><i class="fa-solid fa-droplet text-brandRed mr-1"></i>Regrowth Therapy</span>
+                </div>
+                <h3 class="font-black text-slate-900 text-base leading-snug mb-2 group-hover:text-brandRed transition-colors">
+                  <a href="prp-gfc-hair-regrowth-therapy.html">PRP vs GFC Therapy: Activating Miniaturized Hair Follicles with Growth Factors</a>
+                </h3>
+                <p class="text-slate-600 text-xs leading-relaxed line-clamp-3 mb-4">
+                  How autologous platelet concentrations enrich dermal papilla cells, thicken fine thinning strands, and halt early-stage male & female pattern hair loss.
+                </p>
+                <div class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                  <span class="font-bold text-slate-700">Dr. Ajay Mohan</span>
+                  <a href="prp-gfc-hair-regrowth-therapy.html" class="text-brandRed font-black hover:underline flex items-center gap-1">Read Guide <i class="fa-solid fa-chevron-right text-[9px]"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 7. HYDRAFACIAL & MEDI-GLOW -->
+            <article class="blog-card glass-card rounded-2xl overflow-hidden border border-slate-200/90 hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="hydrafacial-glow">
+              <div class="relative h-48 blog-card-img-wrap bg-slate-900">
+                <img src="images/14.webp" alt="Medical Hydrafacial Mau" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <span class="absolute top-3 left-3 bg-brandTeal text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-md">Hydrafacial</span>
+              </div>
+              <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center text-[11px] text-slate-400 mb-2 gap-3 font-semibold">
+                  <span><i class="fa-regular fa-clock text-brandRed mr-1"></i>6 Min Read</span>
+                  <span><i class="fa-solid fa-droplet text-brandTeal mr-1"></i>Deep Infusion</span>
+                </div>
+                <h3 class="font-black text-slate-900 text-base leading-snug mb-2 group-hover:text-brandTeal transition-colors">
+                  <a href="medical-hydrafacial-benefits.html">Why a Clinical Hydrafacial Is Superior to Salon Facials: The Vortex Extraction Science</a>
+                </h3>
+                <p class="text-slate-600 text-xs leading-relaxed line-clamp-3 mb-4">
+                  Discover why medical suction extraction clears sebum and impurities without skin inflammation while bathing the skin in peptides and hyaluronic acid.
+                </p>
+                <div class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                  <span class="font-bold text-slate-700">Dr. Ajay Mohan</span>
+                  <a href="medical-hydrafacial-benefits.html" class="text-brandTeal font-black hover:underline flex items-center gap-1">Read Guide <i class="fa-solid fa-chevron-right text-[9px]"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card glass-card rounded-2xl overflow-hidden border border-slate-200/90 hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="hydrafacial-glow">
+              <div class="relative h-48 blog-card-img-wrap bg-slate-900">
+                <img src="images/3.webp" alt="Carbon Laser Hollywood Peel" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <span class="absolute top-3 left-3 bg-brandTeal text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-md">Medi-Glow</span>
+              </div>
+              <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center text-[11px] text-slate-400 mb-2 gap-3 font-semibold">
+                  <span><i class="fa-regular fa-clock text-brandRed mr-1"></i>5 Min Read</span>
+                  <span><i class="fa-solid fa-wand-magic-sparkles text-amber-500 mr-1"></i>Instant Glow</span>
+                </div>
+                <h3 class="font-black text-slate-900 text-base leading-snug mb-2 group-hover:text-brandTeal transition-colors">
+                  <a href="carbon-laser-hollywood-peel.html">Carbon Laser Peel: The Instant Pore Minimizer & Red Carpet Glow Procedure</a>
+                </h3>
+                <p class="text-slate-600 text-xs leading-relaxed line-clamp-3 mb-4">
+                  Liquid carbon absorbs deep dermal sebum before being vaporized by laser light, clearing stubborn blackheads and shrinking enlarged pore openings.
+                </p>
+                <div class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                  <span class="font-bold text-slate-700">Dr. Ajay Mohan</span>
+                  <a href="carbon-laser-hollywood-peel.html" class="text-brandTeal font-black hover:underline flex items-center gap-1">Read Guide <i class="fa-solid fa-chevron-right text-[9px]"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card glass-card rounded-2xl overflow-hidden border border-slate-200/90 hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="hydrafacial-glow">
+              <div class="relative h-48 blog-card-img-wrap bg-slate-900">
+                <img src="images/1.webp" alt="Bridal Skin Rejuvenation" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <span class="absolute top-3 left-3 bg-brandTeal text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-md">Medi-Glow</span>
+              </div>
+              <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center text-[11px] text-slate-400 mb-2 gap-3 font-semibold">
+                  <span><i class="fa-regular fa-clock text-brandRed mr-1"></i>8 Min Read</span>
+                  <span><i class="fa-solid fa-gem text-brandRed mr-1"></i>Pre-Bridal</span>
+                </div>
+                <h3 class="font-black text-slate-900 text-base leading-snug mb-2 group-hover:text-brandTeal transition-colors">
+                  <a href="bridal-skin-rejuvenation.html">Pre-Bridal Dermatology Roadmap: When to Start Laser, Peels & Hydrafacials</a>
+                </h3>
+                <p class="text-slate-600 text-xs leading-relaxed line-clamp-3 mb-4">
+                  A 3 to 6-month clinical timeline guiding brides and grooms through laser hair reduction, pigmentation removal, and safe, lasting wedding-day radiance.
+                </p>
+                <div class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                  <span class="font-bold text-slate-700">Dr. Ajay Mohan</span>
+                  <a href="bridal-skin-rejuvenation.html" class="text-brandTeal font-black hover:underline flex items-center gap-1">Read Guide <i class="fa-solid fa-chevron-right text-[9px]"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 8. NAIL SURGERY & DISORDERS -->
+            <article class="blog-card glass-card rounded-2xl overflow-hidden border border-slate-200/90 hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nail-care">
+              <div class="relative h-48 blog-card-img-wrap bg-slate-900">
+                <img src="images/9.webp" alt="Ingrown Toenail Surgery" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <span class="absolute top-3 left-3 bg-brandRed text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-md">Nail Surgery</span>
+              </div>
+              <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center text-[11px] text-slate-400 mb-2 gap-3 font-semibold">
+                  <span><i class="fa-regular fa-clock text-brandRed mr-1"></i>6 Min Read</span>
+                  <span><i class="fa-solid fa-hand text-brandRed mr-1"></i>Minor Surgery</span>
+                </div>
+                <h3 class="font-black text-slate-900 text-base leading-snug mb-2 group-hover:text-brandRed transition-colors">
+                  <a href="ingrown-toenail-surgery.html">Permanent Cure for Painful Ingrown Toenails: Minor Partial Matrixectomy</a>
+                </h3>
+                <p class="text-slate-600 text-xs leading-relaxed line-clamp-3 mb-4">
+                  Why repeatedly cutting nail corners causes recurrent agonizing infections and how precision minor surgery prevents painful recurrence forever.
+                </p>
+                <div class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                  <span class="font-bold text-slate-700">Dr. Ajay Mohan</span>
+                  <a href="ingrown-toenail-surgery.html" class="text-brandRed font-black hover:underline flex items-center gap-1">Read Guide <i class="fa-solid fa-chevron-right text-[9px]"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card glass-card rounded-2xl overflow-hidden border border-slate-200/90 hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nail-care">
+              <div class="relative h-48 blog-card-img-wrap bg-slate-900">
+                <img src="images/8.webp" alt="Fungal Nail Infection Onychomycosis" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <span class="absolute top-3 left-3 bg-brandRed text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-md">Nail Care</span>
+              </div>
+              <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center text-[11px] text-slate-400 mb-2 gap-3 font-semibold">
+                  <span><i class="fa-regular fa-clock text-brandRed mr-1"></i>7 Min Read</span>
+                  <span><i class="fa-solid fa-virus text-amber-600 mr-1"></i>Onychomycosis</span>
+                </div>
+                <h3 class="font-black text-slate-900 text-base leading-snug mb-2 group-hover:text-brandRed transition-colors">
+                  <a href="fungal-nail-infection-onychomycosis.html">Thickened, Yellow Crumbling Nails? How to Eliminate Onychomycosis Permanently</a>
+                </h3>
+                <p class="text-slate-600 text-xs leading-relaxed line-clamp-3 mb-4">
+                  Why topical creams fail to penetrate the hard keratin plate and how systemic pulse therapy coupled with medical debridement restores clear nails.
+                </p>
+                <div class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                  <span class="font-bold text-slate-700">Dr. Ajay Mohan</span>
+                  <a href="fungal-nail-infection-onychomycosis.html" class="text-brandRed font-black hover:underline flex items-center gap-1">Read Guide <i class="fa-solid fa-chevron-right text-[9px]"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 9. MISCELLANEOUS & EVERYDAY GUIDANCE -->
+            <article class="blog-card glass-card rounded-2xl overflow-hidden border border-slate-200/90 hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="miscellaneous">
+              <div class="relative h-48 blog-card-img-wrap bg-slate-900">
+                <img src="images/10.webp" alt="Sunscreen Guide for Indian Skin" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <span class="absolute top-3 left-3 bg-emerald-700 text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-md">Guidance</span>
+              </div>
+              <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center text-[11px] text-slate-400 mb-2 gap-3 font-semibold">
+                  <span><i class="fa-regular fa-clock text-brandRed mr-1"></i>7 Min Read</span>
+                  <span><i class="fa-solid fa-sun text-amber-500 mr-1"></i>Photoprotection</span>
+                </div>
+                <h3 class="font-black text-slate-900 text-base leading-snug mb-2 group-hover:text-brandBlue transition-colors">
+                  <a href="sunscreen-guide-indian-skin.html">How to Choose the Right Sunscreen for Indian Weather: SPF, PA+++ & No White Cast</a>
+                </h3>
+                <p class="text-slate-600 text-xs leading-relaxed line-clamp-3 mb-4">
+                  Dermatologist tips on mineral vs chemical filters, non-comedogenic formulations for humid summers, and the two-finger application rule.
+                </p>
+                <div class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                  <span class="font-bold text-slate-700">Dr. Ajay Mohan</span>
+                  <a href="sunscreen-guide-indian-skin.html" class="text-brandBlue font-black hover:underline flex items-center gap-1">Read Guide <i class="fa-solid fa-chevron-right text-[9px]"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card glass-card rounded-2xl overflow-hidden border border-slate-200/90 hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="miscellaneous">
+              <div class="relative h-48 blog-card-img-wrap bg-slate-900">
+                <img src="images/4.webp" alt="Steroid Cream Abuse Danger" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <span class="absolute top-3 left-3 bg-emerald-700 text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-md">Guidance</span>
+              </div>
+              <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center text-[11px] text-slate-400 mb-2 gap-3 font-semibold">
+                  <span><i class="fa-regular fa-clock text-brandRed mr-1"></i>9 Min Read</span>
+                  <span><i class="fa-solid fa-triangle-exclamation text-brandRed mr-1"></i>Skin Alert</span>
+                </div>
+                <h3 class="font-black text-slate-900 text-base leading-snug mb-2 group-hover:text-brandRed transition-colors">
+                  <a href="steroid-cream-abuse-damage.html">The Dangers of OTC Fairness Creams: Reversing Topical Steroid Damaged Skin (TSDF)</a>
+                </h3>
+                <p class="text-slate-600 text-xs leading-relaxed line-clamp-3 mb-4">
+                  Understanding facial redness, skin thinning, and rebound breakout addiction caused by unsupervised steroid creams and the path to recovery.
+                </p>
+                <div class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                  <span class="font-bold text-slate-700">Dr. Ajay Mohan</span>
+                  <a href="steroid-cream-abuse-damage.html" class="text-brandRed font-black hover:underline flex items-center gap-1">Read Guide <i class="fa-solid fa-chevron-right text-[9px]"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card glass-card rounded-2xl overflow-hidden border border-slate-200/90 hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="miscellaneous">
+              <div class="relative h-48 blog-card-img-wrap bg-slate-900">
+                <img src="images/2.webp" alt="Anti-Aging Retinol Collagen" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <span class="absolute top-3 left-3 bg-emerald-700 text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-md">Guidance</span>
+              </div>
+              <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center text-[11px] text-slate-400 mb-2 gap-3 font-semibold">
+                  <span><i class="fa-regular fa-clock text-brandRed mr-1"></i>8 Min Read</span>
+                  <span><i class="fa-solid fa-heart-pulse text-brandTeal mr-1"></i>Anti-Aging</span>
+                </div>
+                <h3 class="font-black text-slate-900 text-base leading-snug mb-2 group-hover:text-brandBlue transition-colors">
+                  <a href="anti-aging-retinol-collagen-guide.html">The Dermatologist's Blueprint for Anti-Aging: Retinoids, Peptides & Sun Protection</a>
+                </h3>
+                <p class="text-slate-600 text-xs leading-relaxed line-clamp-3 mb-4">
+                  Scientific strategies to protect your dermal collagen reserve, smooth early fine lines, and build a safe, non-irritating night routine.
+                </p>
+                <div class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                  <span class="font-bold text-slate-700">Dr. Ajay Mohan</span>
+                  <a href="anti-aging-retinol-collagen-guide.html" class="text-brandBlue font-black hover:underline flex items-center gap-1">Read Guide <i class="fa-solid fa-chevron-right text-[9px]"></i></a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+
+        <!-- ================= RIGHT: STICKY SIDEBAR (3 Columns) ================= -->
+        <aside class="lg:col-span-4 xl:col-span-3">
+          <div class="sticky-sidebar space-y-6">
+            
+            <!-- Doctor / Clinic Profile Card -->
+            <div class="glass-card rounded-2xl p-5 border border-slate-200 text-center shadow-md reveal">
+              <div class="w-20 h-20 rounded-full mx-auto overflow-hidden border-2 border-brandBlue shadow-md mb-3 bg-white">
+                <img src="images/Centered Car Portrait in White Shirt.webp" alt="Dr. Ajay Mohan" class="w-full h-full object-cover" loading="lazy" decoding="async">
+              </div>
+              <h4 class="text-base font-black text-slate-900 leading-tight">Dr. Ajay Mohan</h4>
+              <p class="text-xs font-bold text-brandRed mt-0.5">M.B.B.S., M.D. (Skin & V.D.)</p>
+              <p class="text-[11px] font-semibold text-slate-500 mt-0.5">Gold Medalist • Ex. PGI & LLRM Meerut</p>
+              
+              <div class="flex items-center justify-center gap-1 text-amber-500 text-xs mt-2.5">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <span class="font-black text-slate-800 ml-1">4.9 / 5.0 (Google Verified)</span>
+              </div>
+              
+              <div class="mt-3.5 pt-3 border-t border-slate-100 flex items-center justify-center gap-2 text-xs font-bold text-emerald-700 bg-emerald-50 py-1.5 rounded-lg">
+                <i class="fa-solid fa-calendar-check"></i> Mon to Fri: 10 AM – 6 PM
+              </div>
+            </div>
+
+            <!-- Categories Index with Live Counts -->
+            <div class="glass-card rounded-2xl p-5 border border-slate-200 shadow-md reveal">
+              <h4 class="text-xs font-black uppercase text-slate-400 tracking-wider mb-3 flex items-center justify-between">
+                <span>Categories</span>
+                <i class="fa-solid fa-list-ul text-brandBlue"></i>
+              </h4>
+              <ul class="space-y-2 text-xs font-bold text-slate-700">
+                <li>
+                  <a href="#" class="sidebar-cat-link flex items-center justify-between p-2 rounded-lg hover:bg-sky-50 hover:text-brandBlue transition-colors" data-target="clinical-derma">
+                    <span>Clinical Dermatology</span>
+                    <span class="bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full text-[10px]">3</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="sidebar-cat-link flex items-center justify-between p-2 rounded-lg hover:bg-red-50 hover:text-brandRed transition-colors" data-target="allergy">
+                    <span>Allergy Therapeutics</span>
+                    <span class="bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full text-[10px]">3</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="sidebar-cat-link flex items-center justify-between p-2 rounded-lg hover:bg-sky-50 hover:text-brandBlue transition-colors" data-target="acne-scars">
+                    <span>Acne & Scar Removal</span>
+                    <span class="bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full text-[10px]">3</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="sidebar-cat-link flex items-center justify-between p-2 rounded-lg hover:bg-red-50 hover:text-brandRed transition-colors" data-target="pigmentation-vitiligo">
+                    <span>Pigmentation & Vitiligo</span>
+                    <span class="bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full text-[10px]">3</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="sidebar-cat-link flex items-center justify-between p-2 rounded-lg hover:bg-sky-50 hover:text-brandBlue transition-colors" data-target="laser-surgery">
+                    <span>Laser Surgery & Tattoos</span>
+                    <span class="bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full text-[10px]">3</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="sidebar-cat-link flex items-center justify-between p-2 rounded-lg hover:bg-red-50 hover:text-brandRed transition-colors" data-target="hair-trichology">
+                    <span>Hair Restoration</span>
+                    <span class="bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full text-[10px]">3</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="sidebar-cat-link flex items-center justify-between p-2 rounded-lg hover:bg-sky-50 hover:text-brandBlue transition-colors" data-target="hydrafacial-glow">
+                    <span>Hydrafacial & Medi-Glow</span>
+                    <span class="bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full text-[10px]">3</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="sidebar-cat-link flex items-center justify-between p-2 rounded-lg hover:bg-red-50 hover:text-brandRed transition-colors" data-target="nail-care">
+                    <span>Nail Surgery & Care</span>
+                    <span class="bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full text-[10px]">2</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="sidebar-cat-link flex items-center justify-between p-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 transition-colors" data-target="miscellaneous">
+                    <span>Everyday Skin Guidance</span>
+                    <span class="bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full text-[10px]">3</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Direct Appointment CTA Box -->
+            <div class="glass-card rounded-2xl p-5 border-2 border-brandBlue/30 bg-gradient-to-br from-blue-50/70 to-white shadow-md reveal">
+              <div class="w-10 h-10 rounded-xl bg-brandBlue text-white flex items-center justify-center text-lg mb-3 shadow-md">
+                <i class="fa-regular fa-calendar-check"></i>
+              </div>
+              <h4 class="text-base font-black text-slate-900 leading-tight">Need a Clinical Consultation?</h4>
+              <p class="text-slate-600 text-xs mt-1.5 leading-relaxed font-medium">
+                Skip queues. Get direct examination and targeted therapy from Dr. Ajay Mohan in Mau.
+              </p>
+              
+              <div class="mt-4 space-y-2">
+                <a href="#booking" class="w-full inline-flex items-center justify-center gap-2 bg-brandRed hover:bg-brandRedHover text-white py-2.5 rounded-full text-xs font-bold shadow-md shadow-brandRed/20 transition-all">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  <span>Book In-Clinic Visit</span>
+                </a>
+                <a href="https://wa.me/919412441889" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white py-2.5 rounded-full text-xs font-bold shadow-md transition-all">
+                  <i class="fa-brands fa-whatsapp text-sm"></i>
+                  <span>WhatsApp Helpdesk</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Dainik Bhaskar Press Recognition Badge -->
+            <div class="glass-card rounded-2xl p-4 border border-slate-200 text-xs text-slate-600 shadow-sm reveal">
+              <div class="flex items-center gap-2.5 mb-1.5">
+                <i class="fa-solid fa-newspaper text-brandRed text-base"></i>
+                <span class="font-black text-slate-900">Press Feature</span>
+              </div>
+              <p class="text-[11px] leading-relaxed">
+                Celebrated across national media and Dainik Bhaskar for pioneering affordable, accurate allergy and skin care in Purvanchal.
+              </p>
+              <a href="https://dainik.bhaskar.com/lvFF1imri3b" target="_blank" rel="noopener noreferrer" class="text-brandBlue font-bold text-[11px] hover:underline mt-2 inline-flex items-center gap-1">
+                <span>Read Coverage</span> <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+              </a>
+            </div>
+
+          </div>
+        </aside>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 5. IN-CLINIC CONSULTATION & WHATSAPP APPOINTMENT ================= -->
+  <section id="booking" class="py-16 bg-gradient-to-b from-[#e8f1fb] via-[#e2edf8] to-[#edf4fc] border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+        <span class="text-xs font-black text-brandRed uppercase tracking-widest block mb-1">Appointment Desk</span>
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900">Schedule Your Dermatology Consultation</h2>
+        <p class="text-slate-600 text-xs sm:text-sm mt-2">Connect directly with Dr. Ajay Mohan's clinic helpdesk via WhatsApp.</p>
+        <div class="w-16 h-1 bg-brandBlue mx-auto rounded-full mt-3"></div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- Left: Clinic Details -->
+        <div class="lg:col-span-5 flex reveal">
+          <div class="glass-card rounded-3xl p-6 sm:p-8 shadow-xl border-l-4 border-l-brandBlue space-y-6 h-full w-full flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-black text-brandRed uppercase tracking-widest block mb-1">Clinic Headquarters</span>
+              <h3 class="text-xl font-black text-slate-900">AMS Skin & Allergy Center®</h3>
+              <p class="text-xs text-slate-600 mt-1 leading-relaxed">In Front of Prakash Hospital, Brahmasthal, Sahadatpur, Mau – 275101, Uttar Pradesh</p>
+            </div>
+
+            <div class="space-y-4 text-xs font-semibold text-slate-700">
+              <div class="flex items-start gap-3">
+                <div class="w-9 h-9 rounded-xl bg-sky-100 text-brandBlue flex items-center justify-center shrink-0 text-sm">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <p class="font-black text-slate-900">Call Direct:</p>
+                  <a href="tel:9412441889" class="text-brandBlue font-extrabold hover:underline">+91 9412441889</a>
+                  <p class="text-[10px] text-slate-500 font-normal">Other lines: 7860070827 • 7081284120</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-9 h-9 rounded-xl bg-sky-100 text-brandBlue flex items-center justify-center shrink-0 text-sm">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div>
+                  <p class="font-black text-slate-900">Consultation Timings:</p>
+                  <p>Monday to Friday: 10:00 AM – 06:00 PM</p>
+                  <p class="text-[10px] text-emerald-600 font-bold"><i class="fa-solid fa-square-parking"></i> Dedicated Parking Available On Premises</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-slate-200 flex items-center gap-3">
+              <a href="https://wa.me/919412441889" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-emerald-500 text-white flex items-center justify-center hover:scale-110 transition-transform shadow">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=61574112081873" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-blue-600 text-white flex items-center justify-center hover:scale-110 transition-transform shadow">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="https://share.google/uth4fhpttFP9Xq4Y3" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-amber-500 text-white flex items-center justify-center hover:scale-110 transition-transform shadow">
+                <i class="fa-brands fa-google"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: WhatsApp Booking Form -->
+        <div class="lg:col-span-7 flex reveal">
+          <div class="glass-card rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-200/90 h-full w-full">
+            <div class="flex items-center gap-2 mb-4">
+              <i class="fa-brands fa-whatsapp text-2xl text-emerald-600"></i>
+              <h3 class="text-lg sm:text-xl font-black text-slate-900">Fast Appointment Booking</h3>
+            </div>
+
+            <form id="waBookingForm" class="space-y-3.5">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                <div>
+                  <label for="waName" class="block text-[11px] font-bold text-slate-700 uppercase mb-1">Patient Name *</label>
+                  <input type="text" id="waName" required placeholder="e.g. Ramesh Kumar" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-brandBlue bg-white font-medium" />
+                </div>
+                <div>
+                  <label for="waPhone" class="block text-[11px] font-bold text-slate-700 uppercase mb-1">Contact Number *</label>
+                  <input type="tel" id="waPhone" required placeholder="e.g. 9412441889" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-brandBlue bg-white font-medium" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                <div>
+                  <label for="waDate" class="block text-[11px] font-bold text-slate-700 uppercase mb-1">Preferred Date (Mon-Fri) *</label>
+                  <input type="date" id="waDate" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-brandBlue bg-white font-medium" />
+                </div>
+                <div>
+                  <label for="waService" class="block text-[11px] font-bold text-slate-700 uppercase mb-1">Treatment Category *</label>
+                  <select id="waService" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-brandBlue bg-white font-medium">
+                    <option value="Skin disease treatment">Clinical Dermatology / Fungal Care</option>
+                    <option value="Allergy treatment">Chronic Allergy & Hives (Urticaria)</option>
+                    <option value="Acne treatment & Scar removal">Acne Treatment & Acne Scars</option>
+                    <option value="Laser Hair Removal">Permanent Laser Hair Removal</option>
+                    <option value="Hydrafacial Treatment">Clinical Hydrafacial Session</option>
+                    <option value="Pigmentation & White patches">Pigmentation / Vitiligo Treatment</option>
+                    <option value="Hair loss & Hair Transplant">Hair Loss / Hair Transplant Surgery</option>
+                    <option value="Radio Cautery (Warts / Tags)">Radio Cautery (Warts, Moles, Tags)</option>
+                    <option value="Nail Surgery & Nail Diseases">Nail Surgery & Nail Disorders</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="waAddress" class="block text-[11px] font-bold text-slate-700 uppercase mb-1">City / Locality *</label>
+                <input type="text" id="waAddress" required placeholder="e.g. Sahadatpur Mau / Azamgarh / Ballia / Ghazipur" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-brandBlue bg-white font-medium" />
+              </div>
+
+              <div>
+                <label for="waNotes" class="block text-[11px] font-bold text-slate-700 uppercase mb-1">Symptoms Description (Optional)</label>
+                <textarea id="waNotes" rows="2" placeholder="Briefly describe itching, rashes, acne duration, or hair thinning..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-brandBlue bg-white font-medium"></textarea>
+              </div>
+
+              <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-black py-3 px-6 rounded-xl shadow-md hover:shadow-emerald-600/30 transition-all flex items-center justify-center gap-2 text-sm">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Confirm & Send via WhatsApp</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 6. FOOTER (Matching Homepage) ================= -->
+  <footer class="bg-slate-950 text-white pt-16 pb-24 sm:pb-12 border-t border-slate-800 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
+        
+        <!-- Brand Info -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full overflow-hidden flex items-center justify-center shadow-lg shrink-0 bg-white">
+              <img
+                src="images/round-logo.png"
+                alt="Clinic Logo"
+                class="w-full h-full object-cover"
+                width="44"
+                height="44"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div>
+              <div class="text-xl font-black">AMS SKIN & <span class="text-brandRed">ALLERGY CENTER®</span></div>
+              <p class="text-[9px] tracking-widest text-slate-400 font-extrabold uppercase">Dr. Ajay Mohan • M.D. (Skin & V.D.) Gold Medalist</p>
+            </div>
+          </div>
+
+          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-sm">
+            Purvanchal's premier skin, hair, nail, laser, and allergy specialty clinic. Delivering evidence-based clinical dermatology, Hydrafacial, hair transplants, and scar revisions with 100% patient satisfaction.
+          </p>
+
+          <div class="text-xs text-slate-400 space-y-1.5">
+            <p><i class="fa-solid fa-phone text-brandRed mr-2"></i><strong>Primary Desk:</strong> 9412441889</p>
+            <p><i class="fa-solid fa-phone text-sky-400 mr-2"></i><strong>Other Lines:</strong> 7860070827, 7081284120</p>
+            <p><i class="fa-solid fa-location-dot text-brandRed mr-2"></i><strong>Address:</strong> In Front of Prakash Hospital, Brahmasthal, Sahadatpur, Mau – 275101 (UP)</p>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-sm font-bold tracking-wider uppercase text-white mb-4">Quick Links</h4>
+          <ul class="space-y-2.5 text-xs text-slate-400">
+            <li><a href="index.html#home" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="index.html#about" class="hover:text-white transition-colors">About Clinic</a></li>
+            <li><a href="index.html#doctor" class="hover:text-white transition-colors text-cyan-300 font-semibold">Dr. Ajay Mohan</a></li>
+            <li><a href="index.html#hydrafacial" class="hover:text-white transition-colors">Hydrafacial & Laser</a></li>
+            <li><a href="index.html#equipment" class="hover:text-white transition-colors">Technologies</a></li>
+            <li><a href="index-blog.html" class="hover:text-white transition-colors text-brandRed font-bold">Blog Library</a></li>
+            <li><a href="index.html#reviews" class="hover:text-white transition-colors">Google Reviews (4.9 ★)</a></li>
+          </ul>
+        </div>
+
+        <!-- Clinical Services -->
+        <div>
+          <h4 class="text-sm font-bold tracking-wider uppercase text-white mb-4">Key Specialties</h4>
+          <ul class="space-y-2.5 text-xs text-slate-400">
+            <li><a href="index.html#services" class="hover:text-white transition-colors">Allergy Therapeutics</a></li>
+            <li><a href="index.html#services" class="hover:text-white transition-colors">Fungal Infection Care</a></li>
+            <li><a href="index.html#services" class="hover:text-white transition-colors">Laser Hair Removal</a></li>
+            <li><a href="index.html#services" class="hover:text-white transition-colors">Acne Scar Revision</a></li>
+            <li><a href="index.html#services" class="hover:text-white transition-colors">Vitiligo White Patches</a></li>
+            <li><a href="index.html#services" class="hover:text-white transition-colors">Hair Transplant Surgery</a></li>
+            <li><a href="index.html#services" class="hover:text-white transition-colors">Radio Cautery & Warts</a></li>
+          </ul>
+        </div>
+
+        <!-- Clinic Hours & Parking -->
+        <div>
+          <h4 class="text-sm font-bold tracking-wider uppercase text-white mb-4">Clinic Schedule</h4>
+          <div class="text-xs text-slate-400 space-y-2">
+            <div>
+              <p class="font-bold text-white">Monday – Friday</p>
+              <p>OPD Hours: 10:00 AM – 06:00 PM</p>
+              <p class="text-[11px] text-amber-300 font-medium mt-0.5">Saturday & Sunday Closed</p>
+            </div>
+            <div class="pt-3 border-t border-slate-800">
+              <span class="bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 px-2 py-0.5 rounded text-[10px] font-bold block w-fit">
+                Parking On Premises
+              </span>
+              <p class="text-[11px] text-slate-400 mt-1">Dedicated parking available for patients traveling from across UP & Bihar.</p>
+            </div>
+            <div class="pt-2 flex items-center gap-3">
+              <a href="https://www.facebook.com/profile.php?id=61574112081873" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center hover:scale-110 transition-all shadow-md" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="https://share.google/uth4fhpttFP9Xq4Y3" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-amber-500 text-white flex items-center justify-center hover:scale-110 transition-all shadow-md" aria-label="Google Profile">
+                <i class="fa-brands fa-google"></i>
+              </a>
+              <a href="https://wa.me/919412441889" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-emerald-500 text-white flex items-center justify-center hover:scale-110 transition-all shadow-md" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="https://dainik.bhaskar.com/lvFF1imri3b" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-brandRed text-white flex items-center justify-center hover:scale-110 transition-all shadow-md" aria-label="Dainik Bhaskar Feature">
+                <i class="fa-solid fa-newspaper"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <p>&copy; <span id="currentYear"></span> AMS Skin & Allergy Center® All Rights Reserved.</p>
+        <p>In Front of Prakash Hospital, Brahmasthal, Sahadatpur, Mau – 275101 (UP).</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================= 7. FLOATING ACTION BUTTONS ================= -->
+  
+  <!-- Direct Phone Call Button -->
+  <a href="tel:9412441889" class="fixed bottom-4 left-4 z-50 bg-brandBlue hover:bg-brandBlueDark text-white w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 group border-2 border-white" aria-label="Call AMS Skin & Allergy Center">
+    <i class="fa-solid fa-phone text-lg sm:text-xl animate-pulse"></i>
+    <span class="absolute left-16 bg-slate-900 text-white text-[11px] font-bold px-3 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md pointer-events-none">
+      Call Now: 9412441889
+    </span>
+  </a>
+
+  <!-- Direct WhatsApp Button -->
+  <a href="https://wa.me/919412441889" target="_blank" rel="noopener noreferrer" class="fixed bottom-4 right-4 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 group border-2 border-white" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp text-xl sm:text-2xl"></i>
+    <span class="absolute right-16 bg-slate-900 text-white text-[11px] font-bold px-3 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md pointer-events-none">
+      WhatsApp: 9412441889
+    </span>
+  </a>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="fixed bottom-20 sm:bottom-24 right-5 sm:right-7 z-40 bg-slate-800/80 hover:bg-brandRed text-white w-9 h-9 sm:w-10 sm:h-10 rounded-full flex items-center justify-center shadow-lg opacity-0 pointer-events-none translate-y-4 transition-all duration-300 text-xs" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ================= 8. JAVASCRIPT LOGIC ================= -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Dynamic Year
+      const yearEl = document.getElementById('currentYear');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+      // Scroll Progress & Back-to-Top
+      const progressBar = document.getElementById('scroll-progress');
+      const backToTopBtn = document.getElementById('backToTop');
+      let scrollTicking = false;
+
+      function updateScrollUI() {
+        const winScroll = window.scrollY || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - window.innerHeight;
+        const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+
+        if (progressBar) progressBar.style.width = scrolled + "%";
+
+        if (backToTopBtn) {
+          const showBackToTop = winScroll > 350;
+          backToTopBtn.classList.toggle('opacity-0', !showBackToTop);
+          backToTopBtn.classList.toggle('pointer-events-none', !showBackToTop);
+          backToTopBtn.classList.toggle('translate-y-4', !showBackToTop);
+          backToTopBtn.classList.toggle('opacity-100', showBackToTop);
+          backToTopBtn.classList.toggle('translate-y-0', showBackToTop);
+        }
+        scrollTicking = false;
+      }
+
+      window.addEventListener('scroll', () => {
+        if (!scrollTicking) {
+          scrollTicking = true;
+          requestAnimationFrame(updateScrollUI);
+        }
+      }, { passive: true });
+
+      updateScrollUI();
+
+      if (backToTopBtn) {
+        backToTopBtn.addEventListener('click', () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+
+      // Mobile Menu Toggle
+      const mobileToggle = document.getElementById('mobile-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuIcon = document.getElementById('menu-icon');
+      const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+      if (mobileToggle && mobileMenu) {
+        mobileToggle.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+          if (menuIcon) {
+            menuIcon.classList.toggle('fa-bars');
+            menuIcon.classList.toggle('fa-xmark');
+          }
+        });
+
+        mobileLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            if (menuIcon) {
+              menuIcon.classList.add('fa-bars');
+              menuIcon.classList.remove('fa-xmark');
+            }
+          });
+        });
+      }
+
+      // Smooth Scroll Helper
+      function scrollToBlogGrid() {
+        const target = document.getElementById('main-content');
+        if (target) {
+          const headerOffset = 80;
+          const elementPosition = target.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+        }
+      }
+
+      // ================= FILTER & SEARCH SYSTEM =================
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const blogCards = document.querySelectorAll('.blog-card');
+      const noResultsBox = document.getElementById('no-results');
+      const categoryOverviewCards = document.querySelectorAll('.category-card');
+      const sidebarCatLinks = document.querySelectorAll('.sidebar-cat-link');
+      const quickTagButtons = document.querySelectorAll('.tag-filter');
+      const searchInput = document.getElementById('blog-search');
+      const searchBtn = document.getElementById('search-btn');
+
+      function filterCategory(catValue) {
+        // Reset Search field on category switch
+        if (searchInput) searchInput.value = '';
+
+        // Update active filter pills
+        filterBtns.forEach(btn => {
+          if (btn.getAttribute('data-filter') === catValue) {
+            btn.classList.add('active');
+          } else {
+            btn.classList.remove('active');
+          }
+        });
+
+        let count = 0;
+        blogCards.forEach(card => {
+          const cardCat = card.getAttribute('data-category');
+          if (catValue === 'all' || cardCat === catValue) {
+            card.style.display = 'flex';
+            card.classList.add('animate-cardFade');
+            count++;
+          } else {
+            card.style.display = 'none';
+            card.classList.remove('animate-cardFade');
+          }
+        });
+
+        if (noResultsBox) {
+          noResultsBox.classList.toggle('hidden', count > 0);
+        }
+      }
+
+      window.resetBlogFilters = function() {
+        filterCategory('all');
+        if (searchInput) searchInput.value = '';
+        scrollToBlogGrid();
+      };
+
+      // Filter Pill Click
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filter = btn.getAttribute('data-filter');
+          filterCategory(filter);
+        });
+      });
+
+      // Category Cards Click (from Overview Section)
+      categoryOverviewCards.forEach(card => {
+        card.addEventListener('click', () => {
+          const targetCat = card.getAttribute('data-category');
+          filterCategory(targetCat);
+          scrollToBlogGrid();
+        });
+      });
+
+      // Sidebar Category Link Click
+      sidebarCatLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetCat = link.getAttribute('data-target');
+          filterCategory(targetCat);
+          scrollToBlogGrid();
+        });
+      });
+
+      // Quick Tag Buttons Click (Hero Section)
+      quickTagButtons.forEach(tagBtn => {
+        tagBtn.addEventListener('click', () => {
+          const targetCat = tagBtn.getAttribute('data-tag');
+          filterCategory(targetCat);
+          scrollToBlogGrid();
+        });
+      });
+
+      // Search Logic
+      function executeSearch() {
+        const query = searchInput.value.toLowerCase().trim();
+        
+        // Reset filter pills to "All"
+        filterBtns.forEach(btn => {
+          btn.classList.toggle('active', btn.getAttribute('data-filter') === 'all');
+        });
+
+        let matches = 0;
+        blogCards.forEach(card => {
+          const title = card.querySelector('h3').innerText.toLowerCase();
+          const excerpt = card.querySelector('p').innerText.toLowerCase();
+          const category = (card.getAttribute('data-category') || '').toLowerCase();
+
+          if (title.includes(query) || excerpt.includes(query) || category.includes(query)) {
+            card.style.display = 'flex';
+            card.classList.add('animate-cardFade');
+            matches++;
+          } else {
+            card.style.display = 'none';
+            card.classList.remove('animate-cardFade');
+          }
+        });
+
+        if (noResultsBox) {
+          noResultsBox.classList.toggle('hidden', matches > 0);
+        }
+
+        scrollToBlogGrid();
+      }
+
+      if (searchBtn) searchBtn.addEventListener('click', executeSearch);
+      if (searchInput) {
+        searchInput.addEventListener('keypress', (e) => {
+          if (e.key === 'Enter') {
+            e.preventDefault();
+            executeSearch();
+          }
+        });
+      }
+
+      // Direct WhatsApp Appointment Scheduler Form
+      const waBookingForm = document.getElementById('waBookingForm');
+      if (waBookingForm) {
+        waBookingForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+          const name = document.getElementById('waName').value.trim();
+          const phone = document.getElementById('waPhone').value.trim();
+          const date = document.getElementById('waDate').value;
+          const service = document.getElementById('waService').value;
+          const address = document.getElementById('waAddress').value.trim();
+          const notes = document.getElementById('waNotes').value.trim() || 'General consultation enquiry';
+
+          const message = 
+            `*New Appointment Request - AMS Skin & Allergy Center®*\n\n` +
+            `• *Patient Name:* ${name}\n` +
+            `• *Contact Phone:* ${phone}\n` +
+            `• *Locality / City:* ${address}\n` +
+            `• *Preferred Date (Mon-Fri):* ${date}\n` +
+            `• *Treatment Area:* ${service}\n` +
+            `• *Notes/Symptoms:* ${notes}\n\n` +
+            `• *Doctor:* Dr. Ajay Mohan (Gold Medalist Dermatologist)\n` +
+            `_Booked via AMS Skin Blog Library_`;
+
+          const encoded = encodeURIComponent(message);
+          window.open(`https://wa.me/919412441889?text=${encoded}`, '_blank');
+        });
+      }
+
+      // Reveal Animation Observer
+      const reveals = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('active');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
+        reveals.forEach(el => revealObserver.observe(el));
+      } else {
+        reveals.forEach(el => el.classList.add('active'));
+      }
+
+    });
+  </script>
+</body>
+</html>
